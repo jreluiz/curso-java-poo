@@ -1,0 +1,27 @@
+# Bytecode compilado
+*.class
+
+# Saídas de build
+out/
+bin/
+target/
+build/
+
+# Empacotamento
+*.jar
+*.war
+
+# Dados gerados pelos programas (Aula 13)
+dados/
+
+# Gabaritos das questões de múltipla escolha (uso do professor — NUNCA versionar)
+gabaritos/
+
+# Editor e sistema operacional
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+PLANEJAMENTO.md
