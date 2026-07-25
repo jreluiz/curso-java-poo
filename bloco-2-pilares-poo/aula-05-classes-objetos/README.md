@@ -22,15 +22,17 @@ No problema do boletim existe uma coisa chamada **aluno**. Ele *sabe* um nome, u
 
 ## 2. Classe é a planta; objeto é a construção
 
-```
-        CLASSE Aluno                          OBJETOS (instâncias)
-   ┌─────────────────────┐            ┌──────────────┐  ┌──────────────┐
-   │ nome                │            │ nome: "Ana"  │  │ nome: "Léo"  │
-   │ matricula           │  ──new──▶  │ mat.: "1001" │  │ mat.: "1002" │
-   │ notas[]             │            │ notas: 8,7,9 │  │ notas: 5,6,4 │
-   │ calcularMedia()     │            └──────────────┘  └──────────────┘
-   └─────────────────────┘              cada um com seus próprios valores
-     escrita UMA vez                     e capaz de calcular sua média
+```mermaid
+flowchart LR
+    C["<b>CLASSE Aluno</b><br>nome<br>matricula<br>notas[]<br>calcularMedia()<br><i>escrita UMA vez</i>"]
+    O1["nome: 'Ana'<br>mat.: '1001'<br>notas: 8,7,9"]
+    O2["nome: 'Léo'<br>mat.: '1002'<br>notas: 5,6,4"]
+    C -->|new| O1
+    C -->|new| O2
+    subgraph OBJ["OBJETOS (instâncias) — cada um com seus próprios valores"]
+        O1
+        O2
+    end
 ```
 
 A **classe** é escrita uma vez e descreve o formato. O **objeto** é cada exemplar criado a partir dela, com seus próprios valores. Uma planta de casa, muitas casas.
@@ -122,11 +124,13 @@ b.nome = "Beatriz";
 System.out.println(a.nome);   // Beatriz 😱
 ```
 
+```mermaid
+flowchart LR
+    a["a"] --> OBJ["Aluno: nome='Beatriz'"]
+    b["b"] --> OBJ
 ```
-   a ──┐
-       ├──▶ [ Aluno: nome="Beatriz" ]      um objeto, dois apelidos
-   b ──┘
-```
+
+> Um objeto, dois apelidos.
 
 Para ter dois alunos de verdade, são dois `new`. E uma referência que não aponta para nada vale `null`:
 
@@ -206,18 +210,16 @@ Um array, três objetos completos, zero sincronização manual. Compare com o ex
 
 Antes de programar, desenhe. A classe `Aluno` fica assim:
 
-```
-┌────────────────────────────┐
-│           Aluno            │
-├────────────────────────────┤
-│ + nome: String             │
-│ + matricula: String        │
-│ + notas: double[]          │
-├────────────────────────────┤
-│ + calcularMedia(): double  │
-│ + estaAprovado(): boolean  │
-│ + imprimirBoletim(): void  │
-└────────────────────────────┘
+```mermaid
+classDiagram
+    class Aluno {
+        +String nome
+        +String matricula
+        +double[] notas
+        +calcularMedia() double
+        +estaAprovado() boolean
+        +imprimirBoletim() void
+    }
 ```
 
 Aquele `+` significa `public` — e na próxima aula você vai descobrir por que deixar tudo público é uma péssima ideia. Detalhes de notação no [guia de diagrama de classes](../../recursos/diagrama-de-classes.md).

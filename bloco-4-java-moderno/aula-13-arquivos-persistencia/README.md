@@ -8,12 +8,13 @@ Tudo o que seus programas fizeram até agora vive na **memória RAM** — que é
 
 Para os dados sobreviverem, é preciso escrevê-los em **armazenamento persistente**: um arquivo em disco, um banco de dados, um servidor. Nesta aula usamos a opção mais simples e mais didática: **arquivo de texto**.
 
-```
-   Programa rodando                  Ao fechar                  Ao abrir de novo
-  ┌──────────────────┐           ┌──────────────┐            ┌──────────────────┐
-  │ List<Livro>      │ ──salvar─▶│ acervo.csv   │ ──carregar▶│ List<Livro>      │
-  │ (memória)        │           │ (disco)      │            │ (memória)        │
-  └──────────────────┘           └──────────────┘            └──────────────────┘
+```mermaid
+flowchart LR
+    A["<b>Programa rodando</b><br>List&lt;Livro&gt; (memória)"]
+    B[("<b>Ao fechar</b><br>acervo.csv (disco)")]
+    C["<b>Ao abrir de novo</b><br>List&lt;Livro&gt; (memória)"]
+    A -->|salvar| B
+    B -->|carregar| C
 ```
 
 ## 2. `Path` e `Files`

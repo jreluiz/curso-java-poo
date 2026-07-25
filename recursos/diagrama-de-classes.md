@@ -11,42 +11,58 @@ Usamos uma versão **simplificada da UML**: só o suficiente para conversar.
 
 Três andares: nome, atributos, métodos.
 
-```
-┌─────────────────────────┐
-│         Livro           │   ← nome da classe
-├─────────────────────────┤
-│ - titulo: String        │   ← atributos (- private, + public)
-│ - autor: String         │
-│ - disponivel: boolean   │
-├─────────────────────────┤
-│ + emprestar(): void     │   ← métodos (+ nome(parâmetros): retorno)
-│ + getTitulo(): String   │
-└─────────────────────────┘
+```mermaid
+classDiagram
+    class Livro {
+        -String titulo
+        -String autor
+        -boolean disponivel
+        +emprestar() void
+        +getTitulo() String
+    }
 ```
 
-Convenções:
+Três andares: o nome da classe, os **atributos** e os **métodos**.
 
-| Símbolo | Significa |
-|:---:|---|
-| `-` | `private` |
-| `+` | `public` |
-| `#` | `protected` |
-| _itálico_ ou `<<abstract>>` | classe ou método abstrato |
-| `<<interface>>` | interface |
-| sublinhado | membro `static` |
+Convenções, e como escrevê-las em Mermaid:
+
+| Símbolo | Significa | Em Mermaid `classDiagram` |
+|:---:|---|---|
+| `-` | `private` | `-String titulo` |
+| `+` | `public` | `+emprestar() void` |
+| `#` | `protected` | `#String nome` |
+| _itálico_ ou `<<abstract>>` | classe ou método abstrato | `<<abstract>>` dentro da classe |
+| `<<interface>>` | interface | `<<interface>>` dentro da classe |
+| sublinhado | membro `static` | `+contar()$ int` (o `$` marca `static`) |
+| genérico | `List<Double>` | `-List~Double~ notas` (til, não `<>`) |
 
 > 💡 Getters e setters triviais **podem ser omitidos** do diagrama — todo mundo sabe que eles existem. Mostre os métodos que contam a história do sistema (`emprestar`, `calcularSalario`, `salvar`).
 
 ## As setas que importam
 
-| Relação | Notação | Lê-se | Exemplo |
-|---------|---------|-------|---------|
-| **Herança** | seta com triângulo vazio ▷ para a superclasse | "é um" | `Aluno ──▷ Pessoa` |
-| **Implementação** | seta tracejada com triângulo vazio | "cumpre o contrato de" | `Pix ┈┈▷ «interface» Pagamento` |
-| **Composição** | losango preenchido ◆ no lado do dono | "é dono de; morre junto" | `Pedido ◆── Item` |
-| **Associação** | linha simples com multiplicidade | "conhece / usa" | `Biblioteca 1 ── * Livro` |
+| Relação | Notação | Lê-se | Em Mermaid |
+|---------|---------|-------|------------|
+| **Herança** | seta com triângulo vazio ▷ para a superclasse | "é um" | `Pessoa <\|-- Aluno` |
+| **Implementação** | seta tracejada com triângulo vazio | "cumpre o contrato de" | `Pagamento <\|.. Pix` |
+| **Composição** | losango preenchido ◆ no lado do dono | "é dono de; morre junto" | `Pedido *-- Item` |
+| **Agregação** | losango vazio ◇ no lado do dono | "tem, mas não morre junto" | `Turma o-- Aluno` |
+| **Associação** | linha simples com multiplicidade | "conhece / usa" | `Biblioteca "1" --> "*" Livro` |
 
-Multiplicidade: `1` (exatamente um), `0..1` (opcional), `*` (muitos).
+Multiplicidade: `1` (exatamente um), `0..1` (opcional), `*` (muitos). Em Mermaid ela vai entre aspas nas pontas: `Biblioteca "1" --> "*" Livro`.
+
+Renderizado, o vocabulário inteiro fica assim:
+
+```mermaid
+classDiagram
+    Pessoa <|-- Aluno
+    Pagamento <|.. Pix
+    Pedido *-- Item
+    Turma o-- Aluno
+    Biblioteca "1" --> "*" Livro
+    class Pagamento {
+        <<interface>>
+    }
+```
 
 ## Escrevendo no README com Mermaid
 

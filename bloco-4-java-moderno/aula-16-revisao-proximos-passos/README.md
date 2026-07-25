@@ -4,20 +4,24 @@
 
 ## 1. O mapa do curso em uma tela
 
-```
-BLOCO 1                BLOCO 2                 BLOCO 3                BLOCO 4
-Fundamentos            Pilares da POO          POO na prática         Java moderno
-─────────────          ─────────────           ─────────────          ─────────────
-tipos estáticos        classe e objeto         ArrayList / List       Files / Path
-casting                construtor + this       generics <T>           CSV: objeto ⇄ texto
-if / switch            private + getters       HashMap / Set          lambda
-== vs equals           static                  try / catch            Comparator
-while / for            extends / super  ─────▶ throw + exceção   ────▶ stream
-arrays                 @Override               personalizada          filter/map/collect
-métodos static         equals / hashCode       pacotes e camadas      Optional
-                       abstract / interface    diagrama de classes    groupingBy
-                       polimorfismo
-        └──────────────── tudo versionado com Git, entregue via GitHub ────────────────┘
+```mermaid
+flowchart LR
+    subgraph B1["BLOCO 1 — Fundamentos"]
+        A1["tipos estáticos<br>casting<br>if / switch<br>== vs equals<br>while / for<br>arrays<br>métodos static"]
+    end
+    subgraph B2["BLOCO 2 — Pilares da POO"]
+        A2["classe e objeto<br>construtor + this<br>private + getters<br>static<br>extends / super<br>@Override<br>equals / hashCode<br>abstract / interface<br>polimorfismo"]
+    end
+    subgraph B3["BLOCO 3 — POO na prática"]
+        A3["ArrayList / List<br>generics &lt;T&gt;<br>HashMap / Set<br>try / catch<br>throw + exceção personalizada<br>pacotes e camadas<br>diagrama de classes"]
+    end
+    subgraph B4["BLOCO 4 — Java moderno"]
+        A4["Files / Path<br>CSV: objeto ⇄ texto<br>lambda<br>Comparator<br>stream<br>filter/map/collect<br>Optional<br>groupingBy"]
+    end
+    B1 --> B2 --> B3 --> B4
+    GIT["tudo versionado com Git, entregue via GitHub"]
+    B1 -.- GIT
+    B4 -.- GIT
 ```
 
 Repare como cada bloco usou o anterior: os métodos (B1) viraram comportamento de objeto (B2); o `equals` (B2) passou a ser exigido pelas coleções (B3); as coleções (B3) viraram fluxos de dados (B4); as exceções (B3) protegeram a leitura de arquivo (B4). Programação é acumulativa.

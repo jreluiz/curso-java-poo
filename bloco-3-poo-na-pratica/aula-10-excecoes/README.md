@@ -78,18 +78,22 @@ while (idade < 0) {
 
 ## 3. *Checked* × *unchecked*
 
-```
-                    Throwable
-                        │
-          ┌─────────────┴─────────────┐
-        Error                    Exception
-   (falhas graves da JVM)   ┌─────────┴──────────┐
-   StackOverflowError    RuntimeException     as demais
-   OutOfMemoryError      (UNCHECKED)          (CHECKED)
-                         NullPointer          IOException
-                         ArrayIndexOutOfBounds FileNotFoundException
-                         NumberFormat
-                         Arithmetic
+```mermaid
+classDiagram
+    Throwable <|-- Error
+    Throwable <|-- Exception
+    Exception <|-- RuntimeException
+    Exception <|-- IOException
+    RuntimeException <|-- NullPointerException
+    RuntimeException <|-- ArrayIndexOutOfBoundsException
+    RuntimeException <|-- NumberFormatException
+    IOException <|-- FileNotFoundException
+    Error <|-- StackOverflowError
+    Error <|-- OutOfMemoryError
+
+    class Error["Error — falhas graves da JVM"]
+    class RuntimeException["RuntimeException — UNCHECKED"]
+    class IOException["IOException — CHECKED"]
 ```
 
 | | *Unchecked* (`RuntimeException`) | *Checked* |

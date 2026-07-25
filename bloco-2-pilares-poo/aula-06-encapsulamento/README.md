@@ -167,12 +167,13 @@ System.out.println(Produto.getTotalCadastrados());   // 2  ← pela CLASSE, não
 System.out.println(Produto.DESCONTO_MAXIMO);         // 0.3
 ```
 
-```
-              Produto (classe)
-      totalCadastrados = 2   ← UM só, compartilhado
-     ┌──────────────┬──────────────┐
-     │ nome="Caderno"│ nome="Caneta"│   ← um por objeto
-     └──────────────┴──────────────┘
+```mermaid
+flowchart TD
+    CLASSE["<b>Produto (classe)</b><br>totalCadastrados = 2<br><i>UM só, compartilhado</i>"]
+    O1["nome = 'Caderno'<br><i>um por objeto</i>"]
+    O2["nome = 'Caneta'<br><i>um por objeto</i>"]
+    CLASSE --- O1
+    CLASSE --- O2
 ```
 
 > ⚠️ Um método `static` **não enxerga** atributos de instância — ele não sabe de qual objeto você fala. Tentar usar `nome` dentro de um método `static` dá `non-static variable nome cannot be referenced from a static context`. É exatamente o mesmo motivo pelo qual você não chama `calcularMedia()` direto do `main`.

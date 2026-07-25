@@ -20,11 +20,13 @@ Este curso usa Java para ensinar **Programação Orientada a Objetos (POO)** —
 
 Em muitas linguagens você escreve e roda direto. Em Java há um passo no meio:
 
-```
-   Aluno.java          javac           Aluno.class          java
-  (você escreve)  ──────────────▶   (bytecode)   ──────────────▶  programa rodando
-   código-fonte       COMPILA        não é legível     A JVM EXECUTA
-                                     por humanos
+```mermaid
+flowchart LR
+    FONTE["<b>Aluno.java</b><br>você escreve<br><i>código-fonte</i>"]
+    BYTE["<b>Aluno.class</b><br>bytecode<br><i>não é legível por humanos</i>"]
+    RUN["<b>programa rodando</b>"]
+    FONTE -->|"javac — COMPILA"| BYTE
+    BYTE -->|"java — a JVM EXECUTA"| RUN
 ```
 
 - **`javac`** (o compilador) traduz seu texto para **bytecode** e, no caminho, **confere se tudo faz sentido**: tipos compatíveis, métodos existentes, ponto e vírgula no lugar. Se algo estiver errado, ele se recusa a gerar o `.class`;
