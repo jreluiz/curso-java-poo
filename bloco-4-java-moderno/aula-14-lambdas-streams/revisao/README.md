@@ -11,7 +11,7 @@
 O que é uma **interface funcional**?
 
 - **a)** Uma interface que só declara constantes;
-- **b)** uma interface com **um único método abstrato**, que por isso pode ser implementada por uma lambda;
+- **b)** uma interface com um único método abstrato, que por isso pode ser implementada por uma lambda;
 - **c)** uma interface implementada por mais de uma classe;
 - **d)** uma classe abstrata sem atributos.
 
@@ -25,7 +25,7 @@ O que a expressão `x -> x * 2` representa?
 
 - **a)** Uma comparação entre `x` e o dobro de `x`;
 - **b)** a declaração de uma variável `x` com valor `x * 2`;
-- **c)** uma **lambda** que recebe `x` como parâmetro e devolve o dobro dele;
+- **c)** uma lambda que recebe `x` como parâmetro e devolve o dobro dele;
 - **d)** um laço que multiplica `x` por 2 repetidamente.
 
 ↩︎ *Aula 14, seção 1 — Interface funcional e lambda*
@@ -86,7 +86,7 @@ O que acontece com a coleção original depois de `acervo.stream().filter(...).t
 - **a)** Ela fica apenas com os elementos filtrados;
 - **b)** ela é esvaziada e precisa ser recarregada;
 - **c)** ela é ordenada como efeito colateral do filtro;
-- **d)** ela **não muda**: a stream produz um resultado novo, e aquela stream não pode ser reutilizada.
+- **d)** ela não muda: a stream produz um resultado novo, e aquela stream não pode ser reutilizada.
 
 ↩︎ *Aula 14, seção 3 — Streams: descrever o resultado, não o passo a passo*
 
@@ -98,7 +98,7 @@ Para que serve `Optional`?
 
 - **a)** Para tornar opcional a implementação de um método de interface;
 - **b)** para permitir que uma variável guarde tipos diferentes;
-- **c)** para representar um valor que **pode ou não existir**, obrigando quem recebe a considerar a ausência em vez de esbarrar num `null`;
+- **c)** para representar um valor que pode ou não existir, obrigando quem recebe a considerar a ausência em vez de esbarrar num `null`;
 - **d)** para converter automaticamente `null` em string vazia.
 
 ↩︎ *Aula 14, seção 5 — `Optional`: dizer "pode não haver" sem `null`*
@@ -110,7 +110,7 @@ Para que serve `Optional`?
 O que `Collectors.groupingBy(Livro::getCategoria, Collectors.counting())` devolve?
 
 - **a)** Uma `List` com as categorias distintas, em ordem alfabética;
-- **b)** um `Map` em que cada categoria é a chave e o valor é a **quantidade** de livros dela;
+- **b)** um `Map` em que cada categoria é a chave e o valor é a quantidade de livros dela;
 - **c)** o total de livros do acervo, somando todas as categorias;
 - **d)** a categoria com maior número de livros.
 

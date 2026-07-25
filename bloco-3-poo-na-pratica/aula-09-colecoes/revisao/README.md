@@ -12,7 +12,7 @@ Qual é a principal vantagem de `ArrayList` sobre um array?
 
 - **a)** Permite guardar objetos de tipos diferentes na mesma estrutura;
 - **b)** é a única estrutura que pode ser percorrida com `for-each`;
-- **c)** **cresce e encolhe sozinha**, sem tamanho fixo e sem deixar posições vazias após remoções;
+- **c)** cresce e encolhe sozinha, sem tamanho fixo e sem deixar posições vazias após remoções;
 - **d)** dispensa a sobrescrita de `equals` para buscas.
 
 ↩︎ *Aula 09, seção 1 — Onde o array não dá conta*
@@ -62,7 +62,7 @@ O que costuma acontecer ao remover elementos de uma lista **dentro** de um `for-
 
 `turma` contém um `Aluno` de matrícula `"1001"`. Criando **outro** objeto com os mesmos dados, `turma.contains(procurado)` devolve `false`. Por quê?
 
-- **a)** Porque `contains` usa `equals`, e sem sobrescrita ele compara **referências**, não conteúdo;
+- **a)** Porque `contains` usa `equals`, e sem sobrescrita ele compara referências, não conteúdo;
 - **b)** porque `contains` só funciona com `String` e tipos primitivos;
 - **c)** porque a lista precisa estar ordenada para que `contains` funcione;
 - **d)** porque `contains` compara apenas o primeiro atributo declarado na classe.
@@ -78,7 +78,7 @@ O que acontece ao chamar `map.put("1001", novoAluno)` quando a chave `"1001"` j�
 - **a)** Lança `IllegalArgumentException`;
 - **b)** a inserção é ignorada e o valor antigo permanece;
 - **c)** os dois valores passam a coexistir sob a mesma chave;
-- **d)** o valor antigo é **substituído** pelo novo.
+- **d)** o valor antigo é substituído pelo novo.
 
 ↩︎ *Aula 09, seção 5 — `Map`: quando existe uma chave*
 
@@ -103,7 +103,7 @@ Qual é a característica que define um `Set`?
 
 - **a)** Mantém os elementos sempre em ordem alfabética;
 - **b)** permite acessar elementos por índice, como um array;
-- **c)** **não admite elementos repetidos**;
+- **c)** não admite elementos repetidos;
 - **d)** guarda pares de chave e valor.
 
 ↩︎ *Aula 09, seção 6 — `Set`: coleção sem repetição*

@@ -30,7 +30,7 @@ O que há de errado em `char inicial = "M";`?
 
 - **a)** Nada: é a forma correta de declarar um caractere;
 - **b)** o nome da variável deveria começar com maiúscula;
-- **c)** não compila: `char` usa **aspas simples** (`'M'`); aspas duplas formam uma `String`;
+- **c)** não compila: `char` usa aspas simples (`'M'`); aspas duplas formam uma `String`;
 - **d)** compila, mas guarda apenas o código numérico da letra.
 
 ↩︎ *Aula 02, seção 2 — Os tipos primitivos*
@@ -74,7 +74,7 @@ Qual é o valor de `int x = (int) 7.9;`?
 
 - **a)** `8`, porque o casting arredonda para o inteiro mais próximo;
 - **b)** `0`, porque a conversão falha;
-- **c)** `7`, porque o casting **descarta** a parte decimal;
+- **c)** `7`, porque o casting descarta a parte decimal;
 - **d)** não compila: `double` não pode virar `int` de jeito nenhum.
 
 ↩︎ *Aula 02, seção 4 — Casting e a armadilha da divisão inteira*
@@ -119,7 +119,7 @@ Um programa lê `int idade = scanner.nextInt();` e, logo em seguida, `String cid
 - **a)** Porque `nextLine()` só funciona antes de qualquer `nextInt()`;
 - **b)** porque o `Scanner` precisa ser recriado a cada leitura;
 - **c)** porque `nextInt()` fecha a entrada padrão depois de ler;
-- **d)** porque `nextInt()` lê o número mas **deixa o Enter** no buffer, e o `nextLine()` consome esse Enter, devolvendo uma string vazia.
+- **d)** porque `nextInt()` lê o número mas deixa o Enter no buffer, e o `nextLine()` consome esse Enter, devolvendo uma string vazia.
 
 ↩︎ *Aula 02, seção 6 — Lendo dados do teclado com `Scanner`*
 

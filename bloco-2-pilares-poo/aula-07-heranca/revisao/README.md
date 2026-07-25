@@ -13,7 +13,7 @@ O que significa `public class Aluno extends Pessoa`?
 - **a)** Que `Aluno` contém um atributo do tipo `Pessoa`;
 - **b)** que `Pessoa` passa a enxergar os atributos privados de `Aluno`;
 - **c)** que as duas classes precisam estar no mesmo arquivo;
-- **d)** que `Aluno` **é uma** `Pessoa` e herda seus atributos e métodos.
+- **d)** que `Aluno` é uma `Pessoa` e herda seus atributos e métodos.
 
 ↩︎ *Aula 07, seção 2 — `extends` e `super`*
 
@@ -25,7 +25,7 @@ Quem enxerga um atributo declarado como `protected`?
 
 - **a)** Somente a própria classe;
 - **b)** qualquer classe do programa, como se fosse `public`;
-- **c)** a própria classe **e suas subclasses**;
+- **c)** a própria classe e suas subclasses;
 - **d)** somente as classes que estiverem no pacote `model`.
 
 ↩︎ *Aula 07, seção 2 — `extends` e `super`*
@@ -49,7 +49,7 @@ Ao executar `new Aluno("Ana")`, em que ordem os construtores rodam?
 
 Onde a chamada `super(...)` precisa aparecer?
 
-- **a)** Como **primeira instrução** do construtor da subclasse;
+- **a)** Como primeira instrução do construtor da subclasse;
 - **b)** na última linha do construtor, depois de inicializar os atributos próprios;
 - **c)** em qualquer lugar do construtor, contanto que apareça uma vez;
 - **d)** fora do construtor, junto à declaração da classe.
@@ -69,7 +69,7 @@ System.out.println(a1.equals(a2));
 ```
 
 - **a)** `true`, porque todos os atributos são iguais;
-- **b)** `false`, porque o `equals` herdado de `Object` compara **referências**;
+- **b)** `false`, porque o `equals` herdado de `Object` compara referências;
 - **c)** não compila: `equals` precisa ser sobrescrito antes de ser usado;
 - **d)** lança `NullPointerException`.
 
@@ -84,7 +84,7 @@ Qual é o risco de sobrescrever `equals()` sem sobrescrever `hashCode()`?
 - **a)** Nenhum: `hashCode` é opcional em qualquer situação;
 - **b)** o programa deixa de compilar;
 - **c)** o `toString()` passa a imprimir o endereço de memória;
-- **d)** coleções baseadas em hash (`HashMap`, `HashSet`) podem **não encontrar** um objeto que está lá dentro.
+- **d)** coleções baseadas em hash (`HashMap`, `HashSet`) podem não encontrar um objeto que está lá dentro.
 
 ↩︎ *Aula 07, seção 5 — `equals()` e `hashCode()`*
 
@@ -96,7 +96,7 @@ Um `Cliente` precisa guardar rua, cidade e UF, já modelados na classe `Endereco
 
 - **a)** `Cliente extends Endereco`, para reaproveitar os três atributos;
 - **b)** `Endereco extends Cliente`, porque o endereço é mais específico;
-- **c)** **composição**: `Cliente` tem um atributo do tipo `Endereco`;
+- **c)** composição: `Cliente` tem um atributo do tipo `Endereco`;
 - **d)** copiar os três atributos para `Cliente` e apagar a classe `Endereco`.
 
 ↩︎ *Aula 07, seção 6 — Quando **não** herdar: prefira composição*
@@ -107,7 +107,7 @@ Um `Cliente` precisa guardar rua, cidade e UF, já modelados na classe `Endereco
 
 O que faz `super.toString()` dentro do `toString()` de uma subclasse?
 
-- **a)** Chama a versão da **superclasse**, permitindo reaproveitá-la e complementar o texto;
+- **a)** Chama a versão da superclasse, permitindo reaproveitá-la e complementar o texto;
 - **b)** chama recursivamente o próprio `toString()`, causando `StackOverflowError`;
 - **c)** imprime o endereço de memória do objeto;
 - **d)** não compila: `super` só pode ser usado em construtores.

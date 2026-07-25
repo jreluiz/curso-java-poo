@@ -11,7 +11,7 @@
 O que acontece quando uma exceção é lançada e **ninguém** a trata?
 
 - **a)** O programa continua normalmente, ignorando a instrução que falhou;
-- **b)** a execução é **encerrada** e o *stack trace* é impresso no terminal;
+- **b)** a execução é encerrada e o *stack trace* é impresso no terminal;
 - **c)** o compilador se recusa a gerar o `.class`;
 - **d)** o método devolve `null` e a execução segue.
 
@@ -23,7 +23,7 @@ O que acontece quando uma exceção é lançada e **ninguém** a trata?
 
 Quando o bloco `finally` executa?
 
-- **a)** **Sempre** — tendo ocorrido exceção ou não;
+- **a)** Sempre — tendo ocorrido exceção ou não;
 - **b)** apenas quando nenhuma exceção é lançada;
 - **c)** apenas quando alguma exceção é lançada;
 - **d)** apenas quando o `catch` não consegue tratar a exceção.
@@ -52,7 +52,7 @@ Qual é a diferença entre exceções *checked* e *unchecked*?
 - **a)** *Checked* ocorrem em execução e *unchecked* em compilação;
 - **b)** *checked* podem ser tratadas e *unchecked* sempre encerram o programa;
 - **c)** *checked* são as do pacote `java.util` e *unchecked* as do `java.io`;
-- **d)** o compilador **obriga** a tratar ou declarar as *checked*; as *unchecked* (`RuntimeException` e filhas) ficam a critério do programador.
+- **d)** o compilador obriga a tratar ou declarar as *checked*; as *unchecked* (`RuntimeException` e filhas) ficam a critério do programador.
 
 ↩︎ *Aula 10, seção 3 — Checked × unchecked*
 
@@ -76,7 +76,7 @@ Qual exceção `Integer.parseInt("abc")` lança?
 O que muda ao trocar um `System.out.println("Saldo insuficiente")` por um `throw` dentro do método `sacar()`?
 
 - **a)** Nada: as duas formas apenas avisam o usuário;
-- **b)** o método é **interrompido** e a decisão sobre o que fazer passa para quem o chamou;
+- **b)** o método é interrompido e a decisão sobre o que fazer passa para quem o chamou;
 - **c)** o programa é encerrado obrigatoriamente;
 - **d)** o saldo é revertido automaticamente pela JVM.
 
@@ -101,7 +101,7 @@ Por que a maioria das exceções personalizadas de regra de negócio estende `Ru
 
 Qual é a vantagem do `try-with-resources`?
 
-- **a)** Os recursos declarados nos parênteses são **fechados automaticamente**, mesmo se ocorrer uma exceção;
+- **a)** Os recursos declarados nos parênteses são fechados automaticamente, mesmo se ocorrer uma exceção;
 - **b)** ele impede que qualquer exceção seja lançada dentro do bloco;
 - **c)** ele dispensa o uso de `catch` para exceções *checked*;
 - **d)** ele reexecuta o bloco automaticamente em caso de falha.

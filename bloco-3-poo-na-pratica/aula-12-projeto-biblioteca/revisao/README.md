@@ -10,7 +10,7 @@
 
 Por que `ItemAcervo` foi declarada como classe **abstrata**?
 
-- **a)** Porque "item genérico" não existe na prateleira: a classe existe para ser herdada e para **obrigar** cada tipo a implementar sua `descricao()`;
+- **a)** Porque "item genérico" não existe na prateleira: a classe existe para ser herdada e para obrigar cada tipo a implementar sua `descricao()`;
 - **b)** porque classes com atributos `protected` precisam ser abstratas;
 - **c)** para que ela possa ser usada dentro de uma `List`;
 - **d)** porque toda superclasse em Java precisa ser abstrata.
@@ -25,7 +25,7 @@ Por que `listarAcervo()` devolve `new ArrayList<>(acervo)` em vez da própria li
 
 - **a)** Porque devolver a lista original causaria `ConcurrentModificationException`;
 - **b)** porque o tipo de retorno declarado exige uma instância nova;
-- **c)** para que ninguém de fora possa **alterar** a coleção interna do serviço (um `clear()` apagaria o acervo);
+- **c)** para que ninguém de fora possa alterar a coleção interna do serviço (um `clear()` apagaria o acervo);
 - **d)** porque uma cópia é percorrida mais rapidamente pelo `for-each`.
 
 ↩︎ *Aula 12, Etapa 4 — O `BibliotecaService`*
@@ -63,7 +63,7 @@ Por que sobrescrever `equals` e `hashCode` em `ItemAcervo` (por `codigo`) e em `
 `ObraDeReferencia` sobrescreve `emprestar()` lançando `UnsupportedOperationException`. Qual é a consequência disso para o resto do sistema?
 
 - **a)** O `BibliotecaService` precisa de um `if` novo para o tipo `ObraDeReferencia`;
-- **b)** o restante do sistema **continua funcionando sem conhecer** a nova classe — basta o `app` tratar a exceção;
+- **b)** o restante do sistema continua funcionando sem conhecer a nova classe — basta o `app` tratar a exceção;
 - **c)** todas as demais subclasses precisam sobrescrever o mesmo método;
 - **d)** a interface `Emprestavel` deixa de ser necessária.
 
@@ -103,7 +103,7 @@ Por que o projeto foi construído em etapas com um commit ao fim de cada uma?
 
 - **a)** Porque o Git recusa commits com muitos arquivos alterados;
 - **b)** porque cada etapa precisa ser revisada por um colega antes da seguinte;
-- **c)** porque cada etapa termina com o sistema **rodando**, o que facilita localizar o que quebrou quando algo dá errado;
+- **c)** porque cada etapa termina com o sistema rodando, o que facilita localizar o que quebrou quando algo dá errado;
 - **d)** porque commits pequenos ocupam menos espaço no repositório.
 
 ↩︎ *Aula 12, Etapa 1 — O modelo básico*

@@ -89,7 +89,7 @@ Um método declarado como `public static double calcularMedia(double[] v)` tem u
 
 O que caracteriza a **sobrecarga** de métodos?
 
-- **a)** Métodos com o **mesmo nome** e listas de parâmetros diferentes na mesma classe;
+- **a)** Métodos com o mesmo nome e listas de parâmetros diferentes na mesma classe;
 - **b)** métodos com nomes diferentes que fazem a mesma coisa;
 - **c)** um método que chama a si mesmo repetidamente;
 - **d)** um método `static` que é chamado sem objeto.
@@ -124,7 +124,7 @@ Um `while (contador <= 5)` cujo corpo nunca altera `contador` produz:
 
 - **a)** Erro de compilação, detectado pelo `javac`;
 - **b)** exatamente uma repetição;
-- **c)** um **laço infinito**: o programa trava repetindo para sempre;
+- **c)** um laço infinito: o programa trava repetindo para sempre;
 - **d)** nenhuma repetição, porque o compilador remove laços sem efeito.
 
 ↩︎ *Aula 04, seção 1 — `while` e `do-while`*

@@ -38,7 +38,7 @@ Num `switch` clássico, o que acontece quando um `case` não termina com `break`
 
 - **a)** O `switch` inteiro é ignorado;
 - **b)** o compilador acusa erro e não gera o `.class`;
-- **c)** a execução **continua nos casos seguintes** até encontrar um `break` ou o fim do bloco;
+- **c)** a execução continua nos casos seguintes até encontrar um `break` ou o fim do bloco;
 - **d)** apenas o `default` passa a ser executado.
 
 ↩︎ *Aula 03, seção 4 — `switch`: quando é o mesmo valor comparado a várias opções*
@@ -70,7 +70,7 @@ System.out.println(a.equals(b));
 Um programa lê a senha com `String senha = scanner.nextLine();` e testa `if (senha == "1234")`. Digitando exatamente `1234`, o resultado é:
 
 - **a)** `true`, porque o conteúdo é idêntico;
-- **b)** `false`, porque `==` compara **referências**, e o texto lido é um objeto diferente do literal;
+- **b)** `false`, porque `==` compara referências, e o texto lido é um objeto diferente do literal;
 - **c)** erro de compilação, porque `String` não aceita `==`;
 - **d)** `true` apenas se a senha for declarada como `final`.
 
@@ -121,7 +121,7 @@ if (aprovado)
 
 - **a)** Nada;
 - **b)** `Parabéns!` e `Você passou!`;
-- **c)** apenas `Você passou!`, porque sem chaves só a **primeira** linha pertence ao `if`;
+- **c)** apenas `Você passou!`, porque sem chaves só a primeira linha pertence ao `if`;
 - **d)** não compila: `if` sem chaves é proibido em Java.
 
 ↩︎ *Aula 03, seção 3 — `if`, `else if`, `else`*

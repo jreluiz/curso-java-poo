@@ -37,7 +37,7 @@ O que é a JVM?
 Depois de compilar com sucesso `javac Ola.java`, o aluno digita `java Ola.class`. O que acontece?
 
 - **a)** O programa executa normalmente, porque `.class` é o arquivo compilado;
-- **b)** falha: o comando `java` recebe o **nome da classe**, sem a extensão — o certo é `java Ola`;
+- **b)** falha: o comando `java` recebe o nome da classe, sem a extensão — o certo é `java Ola`;
 - **c)** falha, porque é preciso compilar de novo antes de cada execução;
 - **d)** o programa executa, mas imprime um aviso de extensão desnecessária.
 
@@ -97,7 +97,7 @@ Você esqueceu um `;` no fim de uma linha. O que é típico acontecer?
 - **a)** O programa compila e só falha quando aquela linha for executada;
 - **b)** o compilador lança `NullPointerException` apontando a linha;
 - **c)** o compilador aceita e assume o ponto e vírgula automaticamente;
-- **d)** o programa nem compila: aparece `error: ';' expected`, muitas vezes apontando a **linha seguinte**.
+- **d)** o programa nem compila: aparece `error: ';' expected`, muitas vezes apontando a linha seguinte.
 
 ↩︎ *Aula 01, seção 4 — Imprimir, comentar e o ponto e vírgula*
 
@@ -108,7 +108,7 @@ Você esqueceu um `;` no fim de uma linha. O que é típico acontecer?
 Por que o método `main` precisa ser `static`?
 
 - **a)** Porque ele devolve um valor de saída para o sistema operacional;
-- **b)** porque a JVM precisa chamá-lo **sem criar nenhum objeto** antes;
+- **b)** porque a JVM precisa chamá-lo sem criar nenhum objeto antes;
 - **c)** porque apenas métodos `static` podem receber um `String[]` como parâmetro;
 - **d)** porque `static` faz o método executar mais rápido que os demais.
 

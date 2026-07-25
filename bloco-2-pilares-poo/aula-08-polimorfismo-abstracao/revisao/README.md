@@ -10,7 +10,7 @@
 
 O que é polimorfismo?
 
-- **a)** A mesma chamada de método executar a **versão adequada ao tipo real** de cada objeto;
+- **a)** A mesma chamada de método executar a versão adequada ao tipo real de cada objeto;
 - **b)** uma classe poder ter vários construtores diferentes;
 - **c)** uma variável poder mudar de tipo durante a execução;
 - **d)** um método poder ser chamado tanto pela classe quanto pelo objeto.
@@ -29,7 +29,7 @@ f.receberBonus();
 ```
 
 - **a)** Executa normalmente, porque o objeto é um `Gerente`;
-- **b)** não compila: quem determina os métodos **disponíveis** é o tipo da **variável** (`Funcionario`);
+- **b)** não compila: quem determina os métodos disponíveis é o tipo da variável (`Funcionario`);
 - **c)** compila e lança `ClassCastException` em execução;
 - **d)** compila e o método é simplesmente ignorado.
 
@@ -44,7 +44,7 @@ Com `Funcionario f = new Vendedor(...)`, quem decide **qual versão** de `calcul
 - **a)** O tipo da variável, decidido na compilação;
 - **b)** a ordem em que as classes foram compiladas;
 - **c)** sempre a versão da superclasse, por ser a mais genérica;
-- **d)** o tipo do **objeto**, em tempo de execução — é a ligação dinâmica.
+- **d)** o tipo do objeto, em tempo de execução — é a ligação dinâmica.
 
 ↩︎ *Aula 08, seção 2 — Upcasting e ligação dinâmica*
 
@@ -70,7 +70,7 @@ Uma classe concreta estende uma classe abstrata e **não** implementa o método 
 - **a)** Compila: o método herdado fica valendo `null`;
 - **b)** compila, mas o método não pode ser chamado;
 - **c)** compila com aviso do compilador;
-- **d)** **não compila** — implementar o método abstrato é obrigatório para uma classe concreta.
+- **d)** não compila — implementar o método abstrato é obrigatório para uma classe concreta.
 
 ↩︎ *Aula 08, seção 3 — Classe abstrata: um molde que não vira objeto*
 
@@ -82,7 +82,7 @@ Qual afirmação sobre interfaces e classes abstratas está correta?
 
 - **a)** Interfaces podem ter atributos com estado; classes abstratas, não;
 - **b)** uma classe pode estender várias superclasses, mas implementar só uma interface;
-- **c)** uma classe estende **uma** superclasse, mas pode implementar **várias** interfaces; a interface define capacidade, sem guardar estado;
+- **c)** uma classe estende uma superclasse, mas pode implementar várias interfaces; a interface define capacidade, sem guardar estado;
 - **d)** interfaces só podem ser implementadas por classes abstratas.
 
 ↩︎ *Aula 08, seção 5 — Interface ou classe abstrata?*

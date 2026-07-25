@@ -13,7 +13,7 @@ Qual é o erro nº 1 na escolha do tema do projeto?
 - **a)** Escolher um tema que já foi feito por outro aluno;
 - **b)** escolher um tema com poucas classes;
 - **c)** escolher um tema sem interface gráfica;
-- **d)** escolher **grande demais** — um escopo que não tem como ser terminado.
+- **d)** escolher grande demais — um escopo que não tem como ser terminado.
 
 ↩︎ *Aula 15, seção 1 — Escolhendo o tema (e o escopo)*
 
@@ -23,7 +23,7 @@ Qual é o erro nº 1 na escolha do tema do projeto?
 
 No percurso do requisito ao diagrama, o que fazer com os substantivos e os verbos do enunciado?
 
-- **a)** Substantivos são candidatos a **classe**; verbos são candidatos a **método**;
+- **a)** Substantivos são candidatos a classe; verbos são candidatos a método;
 - **b)** substantivos viram métodos; verbos viram atributos;
 - **c)** substantivos viram pacotes; verbos viram classes;
 - **d)** ambos viram atributos, e os métodos surgem depois, na implementação.
@@ -37,7 +37,7 @@ No percurso do requisito ao diagrama, o que fazer com os substantivos e os verbo
 Como decidir entre herança e composição ao relacionar duas classes?
 
 - **a)** Herança quando as classes estão no mesmo pacote; composição quando estão em pacotes diferentes;
-- **b)** testando a frase: **"é um"** indica herança; **"tem um"** indica um atributo (composição);
+- **b)** testando a frase: "é um" indica herança; "tem um" indica um atributo (composição);
 - **c)** herança sempre que houver atributos em comum, sem exceção;
 - **d)** composição só quando a hierarquia passar de três níveis.
 
@@ -51,7 +51,7 @@ Uma capacidade compartilhada por classes **sem parentesco** entre si (emprestáv
 
 - **a)** Uma superclasse abstrata que todas passam a estender;
 - **b)** um `enum` com os tipos possíveis;
-- **c)** uma **interface** implementada por cada uma delas;
+- **c)** uma interface implementada por cada uma delas;
 - **d)** um conjunto de métodos `static` numa classe utilitária.
 
 ↩︎ *Aula 15, seção 2 — Do requisito ao diagrama*
@@ -64,7 +64,7 @@ Qual estratégia de commits o curso recomenda para o projeto final?
 
 - **a)** Um commit por dia, independentemente do que foi feito;
 - **b)** um único commit final, com o projeto pronto e testado;
-- **c)** commits **pequenos e frequentes**, cada um deixando o programa em estado funcional;
+- **c)** commits pequenos e frequentes, cada um deixando o programa em estado funcional;
 - **d)** um commit por arquivo criado, para facilitar a revisão.
 
 ↩︎ *Aula 15, seção 3 — Estratégia de commits*
@@ -88,7 +88,7 @@ Na revisão em par, o que caracteriza um problema de **camadas**?
 
 Por que não deixar a persistência em arquivo para o fim do projeto?
 
-- **a)** Porque é a parte que **mais quebra** — descobrir os problemas na véspera da entrega custa caro;
+- **a)** Porque é a parte que mais quebra — descobrir os problemas na véspera da entrega custa caro;
 - **b)** porque ela precisa ser implementada antes das classes de modelo;
 - **c)** porque o Git não versiona arquivos de dados criados depois do primeiro commit;
 - **d)** porque a leitura de arquivos exige um pacote separado, criado no início.
@@ -104,7 +104,7 @@ O que o checkpoint desta aula exige que já exista?
 - **a)** O sistema completo, faltando apenas os relatórios;
 - **b)** o diagrama de classes, sem nenhum código escrito ainda;
 - **c)** as classes de modelo compilando, mas ainda sem repositório criado;
-- **d)** repositório com README e `.gitignore`, tema definido, diagrama em Mermaid, pacotes criados, classes de modelo **compilando** e ao menos 3 commits.
+- **d)** repositório com README e `.gitignore`, tema definido, diagrama em Mermaid, pacotes criados, classes de modelo compilando e ao menos 3 commits.
 
 ↩︎ *Aula 15, seção 4 — Checkpoint da aula*
 

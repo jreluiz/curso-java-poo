@@ -11,7 +11,7 @@
 Qual é o objetivo do encapsulamento?
 
 - **a)** Reduzir o tamanho do arquivo compilado;
-- **b)** manter o objeto sempre em **estado válido**, permitindo que o mundo externo interaja apenas pelos métodos que a classe oferece;
+- **b)** manter o objeto sempre em estado válido, permitindo que o mundo externo interaja apenas pelos métodos que a classe oferece;
 - **c)** permitir que uma classe herde atributos de outra;
 - **d)** acelerar a execução, já que atributos privados são acessados mais rápido.
 
@@ -51,7 +51,7 @@ O que faz `this(nome, preco, 0);` na primeira linha de um construtor?
 
 - **a)** Cria um novo objeto da mesma classe dentro do construtor;
 - **b)** chama o construtor da superclasse;
-- **c)** chama **outro construtor da mesma classe**, e precisa ser a primeira instrução;
+- **c)** chama outro construtor da mesma classe, e precisa ser a primeira instrução;
 - **d)** atribui os três valores aos atributos automaticamente.
 
 ↩︎ *Aula 06, seção 4 — Sobrecarga de construtores*
@@ -81,7 +81,7 @@ System.out.println(Produto.getTotalCadastrados());
 
 Por que um método `static` não consegue acessar um atributo de instância?
 
-- **a)** Porque ele pertence à classe, e não a um objeto — não há como saber de **qual** objeto seria o atributo;
+- **a)** Porque ele pertence à classe, e não a um objeto — não há como saber de qual objeto seria o atributo;
 - **b)** porque atributos de instância são sempre `private`;
 - **c)** porque métodos `static` são executados antes de a classe ser carregada;
 - **d)** porque isso só é permitido dentro do método `main`.
@@ -108,7 +108,7 @@ O que aparece ao imprimir um objeto de uma classe que **não** sobrescreveu `toS
 Para que serve a anotação `@Override`?
 
 - **a)** Para tornar o método visível às subclasses;
-- **b)** para o compilador **conferir** que o método realmente sobrescreve outro — sem ela, um erro de assinatura vira uma sobrecarga silenciosa;
+- **b)** para o compilador conferir que o método realmente sobrescreve outro — sem ela, um erro de assinatura vira uma sobrecarga silenciosa;
 - **c)** para impedir que o método seja sobrescrito novamente;
 - **d)** é apenas um comentário decorativo, sem efeito algum.
 
