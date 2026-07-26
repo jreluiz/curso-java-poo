@@ -1,6 +1,7 @@
 # Aula 04 — Laços, Arrays e Métodos
 
 > 🎯 Objetivos: repetir tarefas com laços, guardar vários valores em arrays e quebrar o programa em métodos com responsabilidade própria.
+> 🎬 Slides da aula: [apresentacao-04-lacos-arrays-metodos.pdf](apresentacao/apresentacao-04-lacos-arrays-metodos.pdf)
 
 Esta é a última aula antes da POO. Ao final dela você já escreve programas completos — e vai sentir na pele o problema que a Aula 05 vem resolver.
 

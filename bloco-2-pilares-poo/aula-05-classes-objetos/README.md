@@ -1,6 +1,7 @@
 # Aula 05 — Classes e Objetos
 
 > 🎯 Objetivos: entender por que a POO existe, escrever sua primeira classe com atributos e métodos, criar objetos com `new` e dominar construtores e `this`.
+> 🎬 Slides da aula: [apresentacao-05-classes-objetos.pdf](apresentacao/apresentacao-05-classes-objetos.pdf)
 
 ## 1. O problema que a POO resolve
 

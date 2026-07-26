@@ -1,6 +1,7 @@
 # Aula 11 — Organização do Código
 
 > 🎯 Objetivos: organizar classes em pacotes e camadas, usar `enum` e `record` nos lugares certos, documentar com Javadoc e ler um diagrama de classes.
+> 🎬 Slides da aula: [apresentacao-11-organizacao-pacotes.pdf](apresentacao/apresentacao-11-organizacao-pacotes.pdf)
 
 Até aqui, cada exercício tinha 3 ou 4 classes soltas numa pasta. Um sistema de verdade tem 30 — e a diferença entre um projeto que se mantém e um que apodrece está nesta aula.
 

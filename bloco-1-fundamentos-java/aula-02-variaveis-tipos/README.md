@@ -1,6 +1,7 @@
 # Aula 02 — Variáveis e Tipos
 
 > 🎯 Objetivos: declarar variáveis com tipagem estática, conhecer os tipos primitivos e a `String`, converter tipos com segurança e ler dados do teclado.
+> 🎬 Slides da aula: [apresentacao-02-variaveis-tipos.pdf](apresentacao/apresentacao-02-variaveis-tipos.pdf)
 
 ## 1. Tipagem estática: declarar é assumir compromisso
 

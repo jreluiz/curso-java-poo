@@ -1,6 +1,7 @@
 # Aula 13 — Arquivos e Persistência
 
 > 🎯 Objetivos: gravar e ler arquivos de texto com `Files`, transformar objetos em linhas de CSV e de volta em objetos, e fazer seu sistema lembrar dos dados entre execuções.
+> 🎬 Slides da aula: [apresentacao-13-arquivos-persistencia.pdf](apresentacao/apresentacao-13-arquivos-persistencia.pdf)
 
 ## 1. Por que os dados somem
 

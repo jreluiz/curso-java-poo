@@ -1,6 +1,7 @@
 # Aula 14 — Lambdas e Streams
 
 > 🎯 Objetivos: escrever lambdas, ordenar coleções com `Comparator`, transformar dados com a Streams API e devolver ausência com `Optional`.
+> 🎬 Slides da aula: [apresentacao-14-lambdas-streams.pdf](apresentacao/apresentacao-14-lambdas-streams.pdf)
 
 Este é o Java moderno. Nada aqui substitui o que você aprendeu — mas boa parte dos laços que você escreveu no Bloco 3 pode virar uma linha legível.
 

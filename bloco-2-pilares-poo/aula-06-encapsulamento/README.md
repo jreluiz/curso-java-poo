@@ -1,6 +1,7 @@
 # Aula 06 — Encapsulamento
 
 > 🎯 Objetivos: proteger os dados de um objeto com `private`, escrever getters e setters que **validam**, sobrecarregar construtores e distinguir o que é do objeto do que é da classe (`static`).
+> 🎬 Slides da aula: [apresentacao-06-encapsulamento.pdf](apresentacao/apresentacao-06-encapsulamento.pdf)
 
 ## 1. O problema de deixar tudo público
 

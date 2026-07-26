@@ -1,6 +1,7 @@
 # Aula 07 — Herança
 
 > 🎯 Objetivos: reaproveitar código com `extends`, entender `super` e a ordem dos construtores, sobrescrever métodos com `@Override` e saber **quando não herdar**.
+> 🎬 Slides da aula: [apresentacao-07-heranca.pdf](apresentacao/apresentacao-07-heranca.pdf)
 
 ## 1. O problema: copiar e colar entre classes
 

@@ -1,6 +1,7 @@
 # Aula 16 — Revisão e Próximos Passos
 
 > 🎯 Objetivos: consolidar o mapa do curso, ver os quatro pilares num exemplo só, experimentar testes automatizados e saber o que estudar depois.
+> 🎬 Slides da aula: [apresentacao-16-revisao-proximos-passos.pdf](apresentacao/apresentacao-16-revisao-proximos-passos.pdf)
 
 ## 1. O mapa do curso em uma tela
 

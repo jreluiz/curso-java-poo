@@ -1,6 +1,7 @@
 # Aula 12 — Projeto Guiado: Sistema de Biblioteca
 
 > 🎯 Objetivos: construir, do zero e em 6 etapas, um sistema completo que usa **tudo** do curso até aqui — classes, encapsulamento, herança, interface, polimorfismo, coleções, exceções e pacotes.
+> 🎬 Slides da aula: [apresentacao-12-projeto-biblioteca.pdf](apresentacao/apresentacao-12-projeto-biblioteca.pdf)
 
 Esta aula é diferente: não há conceito novo. Há um sistema para construir, **uma etapa por vez**, com um commit ao fim de cada uma. É a ponte entre "sei o conceito" e "consigo fazer".
 

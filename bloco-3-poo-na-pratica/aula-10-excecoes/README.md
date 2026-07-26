@@ -1,6 +1,7 @@
 # Aula 10 — Exceções
 
 > 🎯 Objetivos: impedir que o programa quebre na mão do usuário com `try`/`catch`, distinguir exceções *checked* e *unchecked*, lançar as suas próprias e criar exceções personalizadas.
+> 🎬 Slides da aula: [apresentacao-10-excecoes.pdf](apresentacao/apresentacao-10-excecoes.pdf)
 
 ## 1. O programa que quebra na primeira digitação errada
 

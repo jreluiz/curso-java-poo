@@ -1,6 +1,7 @@
 # Aula 08 — Polimorfismo e Abstração
 
 > 🎯 Objetivos: tratar objetos diferentes pelo mesmo tipo, entender a ligação dinâmica, e escolher entre **classe abstrata** e **interface** para definir contratos.
+> 🎬 Slides da aula: [apresentacao-08-polimorfismo-abstracao.pdf](apresentacao/apresentacao-08-polimorfismo-abstracao.pdf)
 
 Este é o último pilar — e o que dá à POO o seu superpoder: escrever código que funciona com objetos que **ainda não existem**.
 

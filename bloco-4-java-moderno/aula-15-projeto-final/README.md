@@ -1,6 +1,7 @@
 # Aula 15 — Projeto Final
 
 > 🎯 Objetivos: escolher um tema viável, sair do requisito para o diagrama de classes, desenvolver com commits que contam a história e revisar o código de um colega.
+> 🎬 Slides da aula: [apresentacao-15-projeto-final.pdf](apresentacao/apresentacao-15-projeto-final.pdf)
 
 Nesta aula você não aprende conceito novo: você **usa todos**. O enunciado completo, com requisitos e critérios, está em [projetos/projeto-final.md](../../projetos/projeto-final.md) — leia antes de continuar.
 

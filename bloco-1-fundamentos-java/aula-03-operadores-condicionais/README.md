@@ -1,6 +1,7 @@
 # Aula 03 — Operadores e Condicionais
 
 > 🎯 Objetivos: combinar valores com operadores, tomar decisões com `if` e `switch`, e comparar textos do jeito certo.
+> 🎬 Slides da aula: [apresentacao-03-operadores-condicionais.pdf](apresentacao/apresentacao-03-operadores-condicionais.pdf)
 
 ## 1. Operadores aritméticos e precedência
 

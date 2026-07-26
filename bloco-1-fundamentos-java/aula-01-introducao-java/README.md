@@ -1,6 +1,7 @@
 # Aula 01 — Introdução ao Java e à JVM
 
 > 🎯 Objetivos: entender o que é Java e como ele executa, escrever seu primeiro programa e dominar o ciclo **escrever → compilar → executar**.
+> 🎬 Slides da aula: [apresentacao-01-introducao-java.pdf](apresentacao/apresentacao-01-introducao-java.pdf)
 
 ## 1. O que é Java?
 

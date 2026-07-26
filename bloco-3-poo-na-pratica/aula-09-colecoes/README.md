@@ -1,6 +1,7 @@
 # Aula 09 — Coleções
 
 > 🎯 Objetivos: substituir arrays por `ArrayList`, entender generics, buscar e remover objetos com segurança e conhecer o `HashMap`.
+> 🎬 Slides da aula: [apresentacao-09-colecoes.pdf](apresentacao/apresentacao-09-colecoes.pdf)
 
 ## 1. Onde o array não dá conta
 
