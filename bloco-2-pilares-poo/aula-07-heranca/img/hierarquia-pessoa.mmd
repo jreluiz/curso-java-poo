@@ -1,0 +1,30 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 22px
+    lineColor: "#e76f00"
+    primaryColor: "#fdf1e6"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#e76f00"
+---
+classDiagram
+    class Pessoa {
+        #String nome
+        #String cpf
+        #int idade
+        +getNome() String
+        +ehMaiorDeIdade() boolean
+    }
+    class Aluno {
+        -String matricula
+        -double[] notas
+        +calcularMedia() double
+    }
+    class Professor {
+        -double salario
+        +calcularSalarioAnual() double
+    }
+    Pessoa <|-- Aluno
+    Pessoa <|-- Professor

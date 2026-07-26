@@ -25,3 +25,7 @@ gabaritos/
 Thumbs.db
 
 PLANEJAMENTO.md
+
+# Python (ferramentas de slides)
+__pycache__/
+*.pyc

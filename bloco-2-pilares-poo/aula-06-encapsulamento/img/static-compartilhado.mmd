@@ -1,0 +1,29 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 23px
+    lineColor: "#e76f00"
+    primaryColor: "#fdf1e6"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#e76f00"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 60
+    rankSpacing: 80
+---
+flowchart TD
+    CLASSE["<b>Produto</b> — a classe<br><br>totalCadastrados = 2<br><i>UM só, compartilhado</i>"]
+    O1["objeto<br>nome = 'Caderno'<br><i>um por objeto</i>"]
+    O2["objeto<br>nome = 'Caneta'<br><i>um por objeto</i>"]
+
+    CLASSE --- O1
+    CLASSE --- O2
+
+    classDef planta fill:#e76f00,stroke:#b35600,stroke-width:4px,color:#ffffff
+    classDef inst fill:#fdf1e6,stroke:#e76f00,stroke-width:3px,color:#1a1a1a
+    class CLASSE planta
+    class O1,O2 inst
+
+    linkStyle 0,1 stroke:#e76f00,stroke-width:3px

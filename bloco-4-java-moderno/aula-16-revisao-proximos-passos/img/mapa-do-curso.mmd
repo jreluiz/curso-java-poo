@@ -1,0 +1,37 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 18px
+    lineColor: "#e76f00"
+    primaryColor: "#fdf1e6"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#e76f00"
+  flowchart:
+    nodeSpacing: 35
+    rankSpacing: 50
+    padding: 14
+---
+flowchart LR
+    subgraph B1["BLOCO 1 — Fundamentos"]
+        A1["tipos estáticos<br>casting<br>if / switch<br>== vs equals<br>while / for<br>arrays<br>métodos static"]
+    end
+    subgraph B2["BLOCO 2 — Pilares"]
+        A2["classe e objeto<br>construtor + this<br>private + getters<br>extends / super<br>@Override<br>equals / hashCode<br>abstract / interface<br>polimorfismo"]
+    end
+    subgraph B3["BLOCO 3 — Na prática"]
+        A3["ArrayList / List<br>generics<br>HashMap / Set<br>try / catch<br>exceção própria<br>pacotes e camadas<br>diagrama de classes"]
+    end
+    subgraph B4["BLOCO 4 — Moderno"]
+        A4["Files / Path<br>CSV: objeto ⇄ texto<br>lambda<br>Comparator<br>stream<br>filter/map/collect<br>Optional"]
+    end
+    B1 --> B2 --> B3 --> B4
+
+    classDef caixa fill:#fdf1e6,stroke:#e76f00,stroke-width:3px,color:#1a1a1a
+    class A1,A2,A3,A4 caixa
+    style B1 fill:#f6f4ef,stroke:#c9c4b8,stroke-width:2px,color:#5c5c5c
+    style B2 fill:#f6f4ef,stroke:#c9c4b8,stroke-width:2px,color:#5c5c5c
+    style B3 fill:#f6f4ef,stroke:#c9c4b8,stroke-width:2px,color:#5c5c5c
+    style B4 fill:#f6f4ef,stroke:#c9c4b8,stroke-width:2px,color:#5c5c5c
+    linkStyle 0,1,2 stroke:#e76f00,stroke-width:3.5px

@@ -1,0 +1,479 @@
+/* @theme trilha */
+
+/*
+ * Tema Marp da trilha de cursos.
+ * Para adaptar a outro curso, mude APENAS as duas variáveis em `section`:
+ *   --accent        cor de destaque do curso
+ *   --accent-suave  a mesma cor bem diluída (fundos)
+ *
+ *   📚 Git e GitHub .... #f05033 / #fdeeeb
+ *   🟨 JavaScript ...... #c9a800 / #fdf9e3
+ *   ☕ Java POO ........ #e76f00 / #fdf1e6
+ *   🗄️ Modelagem ....... #336791 / #eaf0f5
+ *   🔵 VS Code ......... #007acc / #e6f3fb
+ */
+
+@import 'default';
+
+section {
+  --accent: #e76f00;
+  --accent-suave: #fdf1e6;
+  --fundo: #fdfdfb;
+  --texto: #1a1a1a;
+  --texto-fraco: #5c5c5c;
+  --codigo-fundo: #1e1e1e;
+
+  width: 1280px;
+  height: 720px;
+  padding: 60px 70px 78px 70px;
+
+  background: var(--fundo);
+  color: var(--texto);
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  font-size: 26px; /* piso: é o que se lê da última fileira */
+  line-height: 1.5;
+  letter-spacing: 0.005em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* ---------- Títulos ---------- */
+
+h1 {
+  font-size: 54px;
+  line-height: 1.15;
+  color: var(--texto);
+  margin: 0 0 24px 0;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  color: var(--texto);
+  margin: 0 0 28px 0;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  padding-bottom: 14px;
+  border-bottom: 3px solid var(--accent);
+}
+
+h3 {
+  font-size: 30px;
+  color: var(--accent);
+  margin: 6px 0 12px 0;
+  font-weight: 600;
+}
+
+/* ---------- Texto e listas ---------- */
+
+p {
+  margin: 0 0 18px 0;
+}
+
+ul,
+ol {
+  margin: 0 0 18px 0;
+  padding-left: 1.1em;
+}
+
+li {
+  margin-bottom: 14px;
+}
+
+li::marker {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+li > ul,
+li > ol {
+  margin-top: 12px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/*
+ * Itálico NÃO recebe cor própria: na trilha ele marca termo técnico sendo
+ * introduzido (*commit*, *staging area*). Deixá-lo cinza empalideceria
+ * justamente a palavra que a aula está apresentando.
+ */
+em {
+  font-style: italic;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 2px solid var(--accent-suave);
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #e6e3dd;
+  margin: 22px 0;
+}
+
+/* ---------- Código ---------- */
+
+code {
+  font-family: 'SF Mono', SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', monospace;
+  font-size: 0.85em;
+
+  /*
+   * Precaução, não correção: as fontes da pilha acima não têm ligadura.
+   * Mas se alguém trocar por Fira Code / JetBrains Mono / Cascadia, `--`
+   * e `->` viram um glifo só — e num curso de linha de comando o aluno
+   * precisa ver exatamente os caracteres que vai digitar.
+   *
+   * (O `--` parecer um traço contínuo é outra coisa: é o hífen ocupando
+   * quase toda a largura de avanço, comportamento normal de monoespaçada.
+   * Acontece igual no terminal do aluno; não há o que corrigir.)
+   */
+  font-variant-ligatures: none;
+  font-feature-settings: 'liga' 0, 'calt' 0;
+}
+
+/* código inline: chip claro, para não brigar com o texto */
+:not(pre) > code {
+  background: #f0ede7;
+  color: #b02a1c;
+  padding: 0.1em 0.4em;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+pre {
+  background: var(--codigo-fundo);
+  border-radius: 10px;
+  padding: 22px 26px;
+  margin: 0 0 20px 0;
+  overflow: visible;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.16);
+}
+
+pre > code {
+  background: transparent;
+  color: #e8e8e8;
+  font-size: 22px;
+  line-height: 1.55;
+  padding: 0;
+  white-space: pre;
+  display: block;
+}
+
+/* realce de sintaxe, paleta próxima do VS Code Dark+ */
+pre > code .hljs-comment,
+pre > code .hljs-quote { color: #7f9c68; font-style: italic; }
+pre > code .hljs-keyword,
+pre > code .hljs-selector-tag,
+pre > code .hljs-built_in { color: #6aa9e9; }
+pre > code .hljs-string,
+pre > code .hljs-attr { color: #d69d78; }
+pre > code .hljs-number,
+pre > code .hljs-literal { color: #b6cea8; }
+pre > code .hljs-title,
+pre > code .hljs-name,
+pre > code .hljs-section { color: #ddd9a0; }
+pre > code .hljs-variable,
+pre > code .hljs-template-variable { color: #9cdcfe; }
+
+/*
+ * Blocos ```diff — a aula fala em "linha vermelha" e "linha verde".
+ * O `background` é obrigatório: o CSS do GitHub pinta .hljs-deletion e
+ * .hljs-addition com fundo CLARO, pensado para bloco de código claro.
+ * Dentro do nosso bloco escuro isso deixa a linha ilegível.
+ */
+pre > code .hljs-deletion {
+  color: #f2836f;
+  background: rgba(242, 131, 111, 0.13);
+  display: inline-block;
+  width: 100%;
+}
+
+pre > code .hljs-addition {
+  color: #9ad17f;
+  background: rgba(154, 209, 127, 0.13);
+  display: inline-block;
+  width: 100%;
+}
+
+pre > code .hljs-meta {
+  color: #8f8f8f;
+  background: transparent;
+}
+
+/* ---------- Callouts (blockquote) ---------- */
+
+blockquote {
+  margin: 4px 0 20px 0;
+  padding: 18px 24px;
+  background: var(--accent-suave);
+  border-left: 6px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  font-size: 25px;
+  color: var(--texto); /* sem isto herda o cinza do CSS do GitHub */
+}
+
+blockquote > p {
+  margin: 0;
+}
+
+blockquote > p + p {
+  margin-top: 12px;
+}
+
+/* Marp injeta aspas tipográficas em citações — não queremos em callout */
+blockquote::before,
+blockquote::after {
+  content: none;
+}
+
+/* ---------- Tabelas ---------- */
+
+/*
+ * ⚠️ O tema `default` do Marp embute o CSS de Markdown do GitHub, que traz
+ * `section table { display: block; width: max-content }` e bordas em
+ * `section table td/th`. O Marp prefixa as regras deste arquivo com
+ * `section`, então um seletor solto (`td` → `section td`) PERDE para o
+ * `section table td` do GitHub. Daí os seletores abaixo já virem
+ * qualificados com `table` — assim empatam em especificidade e, por virem
+ * depois na cascata, vencem.
+ */
+table {
+  display: table; /* o GitHub CSS põe block, o que quebra o width:100% */
+  overflow: visible;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 4px 0 20px 0;
+  font-size: 25px;
+}
+
+table th {
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 700;
+  text-align: left;
+  padding: 14px 18px;
+  border: none;
+}
+
+table th:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+table th:last-child {
+  border-radius: 0 8px 0 0;
+}
+
+table td {
+  padding: 13px 18px;
+  border: none;
+  border-bottom: 1px solid #e6e3dd;
+  vertical-align: top;
+}
+
+table tr {
+  background: transparent;
+  border-top: none;
+}
+
+table tbody tr:nth-child(even) {
+  background: #f6f4ef;
+}
+
+/* ---------- Imagens ---------- */
+
+/*
+ * ⚠️ Cuidado dobrado com seletores de `img` aqui.
+ *
+ * O marp.config.mjs desliga o Twemoji, então emoji é texto e não imagem.
+ * O `:not(.emoji)` abaixo é cinto e suspensório: se alguém religar o
+ * Twemoji, emoji volta a ser <img class="emoji"> e estas regras
+ * continuarão sem afetá-lo.
+ *
+ * E note o `:not(.emoji)` junto de `:only-child`: `:only-child` ignora nós
+ * de texto, então num parágrafo `<img>Ou seja: ele nasceu…</img-irmão-nenhum>`
+ * a imagem CONTA como filha única e a regra pegaria o emoji de um callout.
+ */
+p > img:only-child:not(.emoji) {
+  display: block;
+  margin: 0 auto;
+}
+
+p:has(> img:only-child:not(.emoji)) {
+  text-align: center;
+  margin: 8px 0;
+}
+
+/* ---------- Rodapé e paginação ---------- */
+
+footer {
+  color: var(--texto-fraco);
+  font-size: 18px;
+  left: 70px;
+  bottom: 28px;
+}
+
+section::after {
+  color: var(--texto-fraco);
+  font-size: 18px;
+  right: 70px;
+  bottom: 28px;
+  font-weight: 600;
+}
+
+/* ================= Classes utilitárias ================= */
+
+/* --- capa: primeiro slide do módulo --- */
+
+section.capa {
+  justify-content: center;
+  padding-left: 90px;
+  border-left: 18px solid var(--accent);
+}
+
+section.capa h1 {
+  font-size: 68px;
+  margin-bottom: 10px;
+}
+
+section.capa h2 {
+  font-size: 38px;
+  font-weight: 500;
+  color: var(--texto-fraco);
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 34px;
+}
+
+section.capa .meta {
+  font-size: 24px;
+  color: var(--texto-fraco);
+}
+
+section.capa .emoji {
+  font-size: 76px;
+  line-height: 1;
+  margin-bottom: 22px;
+}
+
+section.capa::after {
+  display: none; /* capa não numera */
+}
+
+section.capa footer {
+  display: none;
+}
+
+/* --- lead: uma ideia só, centralizada (as analogias) --- */
+
+section.lead {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--accent-suave);
+}
+
+section.lead h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+  font-size: 46px;
+  margin-bottom: 30px;
+}
+
+section.lead p {
+  font-size: 32px;
+  max-width: 24em;
+}
+
+section.lead strong {
+  color: #b02a1c;
+}
+
+section.lead ul {
+  text-align: left;
+  font-size: 30px;
+  list-style: none;
+  padding-left: 0;
+}
+
+/* --- checkpoint: fechamento do módulo --- */
+
+section.checkpoint {
+  background: var(--accent-suave);
+}
+
+section.checkpoint ol {
+  font-size: 30px;
+}
+
+section.checkpoint li {
+  margin-bottom: 22px;
+}
+
+/* --- lista-limpa: itens que já começam com emoji, sem bolinha --- */
+
+section.lista-limpa ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+section.lista-limpa ul > li {
+  padding-left: 1.7em;
+  text-indent: -1.7em; /* alinha a quebra de linha depois do emoji */
+}
+
+/* --- tabela-densa: para tabelas de 7+ linhas --- */
+
+section.tabela-densa table {
+  font-size: 22px;
+}
+
+section.tabela-densa td {
+  padding: 9px 18px;
+}
+
+section.tabela-densa th {
+  padding: 11px 18px;
+}
+
+/* --- duas colunas --- */
+
+section.colunas .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 46px;
+  align-items: start;
+}
+
+/* --- diagrama em tela cheia --- */
+
+/* título no topo, como nos outros slides; diagrama centrado no que sobra */
+section.diagrama {
+  justify-content: flex-start;
+}
+
+section.diagrama p:has(> img:only-child:not(.emoji)) {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*
+ * ⚠️ O SVG do mermaid-cli sai com width="100%" e sem largura intrínseca:
+ * sem uma largura explícita ele colapsa para zero dentro do flex.
+ * Por isso o Markdown declara o tamanho — `![w:1140](...)`.
+ */
+section.diagrama img {
+  max-width: 100%;
+  max-height: 430px;
+  height: auto;
+}

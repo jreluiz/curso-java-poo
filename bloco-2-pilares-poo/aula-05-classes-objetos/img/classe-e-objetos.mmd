@@ -1,0 +1,31 @@
+---
+config:
+  theme: base
+  # fontFamily precisa ser chave de topo — dentro de themeVariables é ignorada
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 22px
+    lineColor: "#e76f00"
+    primaryColor: "#fdf1e6"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#e76f00"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 45
+    rankSpacing: 90
+    padding: 20
+---
+flowchart LR
+    C["<b>CLASSE Aluno</b><br><br>nome · matricula · notas[]<br>calcularMedia()<br><br><i>escrita UMA vez</i>"]
+    O1["<b>objeto</b><br>nome: 'Ana'<br>notas: 8, 7, 9"]
+    O2["<b>objeto</b><br>nome: 'Léo'<br>notas: 5, 6, 4"]
+
+    C -->|"<b>new</b>"| O1
+    C -->|"<b>new</b>"| O2
+
+    classDef planta fill:#fdf1e6,stroke:#e76f00,stroke-width:4px,color:#1a1a1a
+    classDef inst fill:#ffffff,stroke:#e76f00,stroke-width:3px,color:#1a1a1a
+    class C planta
+    class O1,O2 inst
+
+    linkStyle 0,1 stroke:#e76f00,stroke-width:3.5px

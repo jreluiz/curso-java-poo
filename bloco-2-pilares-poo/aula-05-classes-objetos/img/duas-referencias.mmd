@@ -1,0 +1,25 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 24px
+    lineColor: "#e76f00"
+    primaryColor: "#fdf1e6"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#e76f00"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 50
+    rankSpacing: 90
+---
+flowchart LR
+    a(["<b>a</b>"]) --> OBJ["<b>UM único objeto</b><br><br>Aluno<br>nome = 'Beatriz'"]
+    b(["<b>b</b>"]) --> OBJ
+
+    classDef ref fill:#ffffff,stroke:#8f8f8f,stroke-width:3px,color:#1a1a1a
+    classDef obj fill:#fdf1e6,stroke:#e76f00,stroke-width:4px,color:#1a1a1a
+    class a,b ref
+    class OBJ obj
+
+    linkStyle 0,1 stroke:#e76f00,stroke-width:3.5px

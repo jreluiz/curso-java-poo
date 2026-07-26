@@ -1,0 +1,24 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 20px
+    lineColor: "#e76f00"
+    primaryColor: "#fdf1e6"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#e76f00"
+---
+classDiagram
+    direction TB
+    Throwable <|-- Error
+    Throwable <|-- Exception
+    Exception <|-- RuntimeException
+    Exception <|-- IOException
+    RuntimeException <|-- NullPointerException
+    RuntimeException <|-- NumberFormatException
+    IOException <|-- FileNotFoundException
+
+    class Error["Error — falhas graves da JVM"]
+    class RuntimeException["RuntimeException — UNCHECKED"]
+    class IOException["IOException — CHECKED"]

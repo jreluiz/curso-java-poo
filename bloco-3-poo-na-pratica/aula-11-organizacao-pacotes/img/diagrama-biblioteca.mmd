@@ -1,0 +1,48 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 17px
+    lineColor: "#e76f00"
+    primaryColor: "#fdf1e6"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#e76f00"
+---
+classDiagram
+    class Emprestavel {
+        <<interface>>
+        +emprestar()
+        +devolver()
+        +estaDisponivel() boolean
+    }
+    class ItemAcervo {
+        <<abstract>>
+        #String codigo
+        #String titulo
+        +descricao()* String
+    }
+    class Livro {
+        -String autor
+        +descricao() String
+    }
+    class Revista {
+        -int edicao
+        +descricao() String
+    }
+    class Usuario {
+        -String id
+        -TipoUsuario tipo
+        +podePegarMais() boolean
+    }
+    class BibliotecaService {
+        -List~ItemAcervo~ acervo
+        +cadastrar(ItemAcervo item)
+        +emprestar(String cod, String id)
+    }
+
+    ItemAcervo <|-- Livro
+    ItemAcervo <|-- Revista
+    Emprestavel <|.. ItemAcervo
+    BibliotecaService "1" o-- "*" ItemAcervo
+    BibliotecaService "1" o-- "*" Usuario
