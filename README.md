@@ -49,15 +49,8 @@ Ao final do curso, você será capaz de:
 |:---:|------|----------|
 | 13 | [Arquivos e persistência](bloco-4-java-moderno/aula-13-arquivos-persistencia/README.md) | `Path` e `Files`, CSV, salvar e carregar objetos |
 | 14 | [Lambdas e Streams](bloco-4-java-moderno/aula-14-lambdas-streams/README.md) | Interfaces funcionais, `Comparator`, `filter`/`map`/`collect` |
-| 15 | [Projeto final](bloco-4-java-moderno/aula-15-projeto-final/README.md) | Desenvolvimento orientado do projeto |
+| 15 | [Laboratório: do requisito ao sistema](bloco-4-java-moderno/aula-15-projeto-final/README.md) | Escolher tema, modelar, commitar com história e revisar em par |
 | 16 | [Revisão e próximos passos](bloco-4-java-moderno/aula-16-revisao-proximos-passos/README.md) | Mapa do curso, degustação de JUnit, o que estudar depois |
-
-## 📦 Projetos práticos
-
-| Projeto | Quando | Modalidade |
-|---------|:---:|------------|
-| [Trabalho em dupla — Sistema via Pull Request](projetos/trabalho-em-dupla.md) | Bloco 3 | Dupla (PRs revisados) |
-| [Projeto final — Sistema com persistência](projetos/projeto-final.md) | Bloco 4 | Individual |
 
 ## 🔁 O ritual Git de toda aula
 
@@ -87,6 +80,7 @@ Consulte o [guia de preparação do ambiente](recursos/ambiente.md): JDK, Intell
 
 ## ⚡ Links rápidos
 
+- 📅 [Cronograma da turma 2026/2](CRONOGRAMA.md) — as datas dos encontros, se você está cursando isto numa turma
 - 🧯 [Erros comuns de Java](recursos/erros-comuns.md) — do `cannot find symbol` ao `NullPointerException`
 - 📐 [Diagrama de classes em 10 minutos](recursos/diagrama-de-classes.md)
 - 🔗 [Links úteis](recursos/links-uteis.md)

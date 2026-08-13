@@ -238,7 +238,7 @@ Na pasta `aula-14/`:
 
 ## ➡️ Próxima aula
 
-**Aula 15 — Projeto Final**
+**Aula 15 — Do requisito ao sistema**
 
 Aula-laboratório: o seu sistema,
 do desenho ao commit final.

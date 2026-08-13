@@ -217,4 +217,4 @@ git push
 
 ---
 
-⬅️ [Aula 13](../aula-13-arquivos-persistencia/README.md) | ➡️ [Aula 15 — Projeto Final](../aula-15-projeto-final/README.md)
+⬅️ [Aula 13](../aula-13-arquivos-persistencia/README.md) | ➡️ [Aula 15 — Laboratório: do requisito ao sistema](../aula-15-projeto-final/README.md)

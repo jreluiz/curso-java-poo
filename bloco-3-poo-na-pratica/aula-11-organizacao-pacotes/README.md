@@ -269,7 +269,7 @@ Na pasta `aula-11/` do seu repositório:
 2. **`StatusPedido.java` + `Pedido.java`** — um `enum` com `AGUARDANDO`, `PAGO`, `ENVIADO`, `ENTREGUE`, `CANCELADO`; a classe `Pedido` só permite avançar para o próximo status válido (não se cancela um pedido já entregue) e lança exceção nas transições inválidas;
 3. **`TipoUsuario.java`** — implemente o enum com atributos da seção 3 e use-o numa classe `Usuario` para decidir quantos itens ela pode pegar emprestados;
 4. **`Coordenada.java` + `Endereco.java`** — crie dois `record` com validação no construtor compacto e mostre no `main` o `toString` e o `equals` funcionando de graça (dois records com os mesmos dados são iguais);
-5. **Desafio 🌶️ `DiagramaDoSeuProjeto.md`** — escolha um sistema do seu dia a dia (academia, lanchonete, escala de plantão) e produza: (a) a lista de classes com atributos e métodos, (b) um diagrama Mermaid com **pelo menos** uma herança, uma interface e uma composição, e (c) o Javadoc dos três métodos principais — **sem escrever o código**. Guarde: pode virar seu projeto final.
+5. **Desafio 🌶️ `DiagramaDoSeuProjeto.md`** — escolha um sistema do seu dia a dia (academia, lanchonete, escala de plantão) e produza: (a) a lista de classes com atributos e métodos, (b) um diagrama Mermaid com **pelo menos** uma herança, uma interface e uma composição, e (c) o Javadoc dos três métodos principais — **sem escrever o código**. Guarde: pode virar o sistema do laboratório da Aula 15.
 
 ## 🧠 Revisão
 

@@ -10,7 +10,7 @@ footer: '☕ Curso de Java e POO · Aula 15'
 
 <div class="emoji">🚀</div>
 
-# Projeto Final
+# Do requisito ao sistema
 
 ## Aula 15 · Bloco 4 — Java Moderno
 
@@ -27,7 +27,8 @@ Você não aprende conceito novo: você **usa todos**.
 3. Estratégia de **commits**
 4. Revisão de código de um colega
 
-O enunciado completo está em `projetos/projeto-final.md`. Leia antes.
+A régua: 5 classes em `model`/`service`/`app`, abstrata + interface,
+polimorfismo sem `if` de tipo, exceção própria, persistência e stream.
 
 ---
 

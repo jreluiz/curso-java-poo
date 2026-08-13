@@ -236,7 +236,7 @@ Na pasta `aula-11/`:
 2. **`StatusPedido` + `Pedido`** — só permite avançar para o status válido;
 3. **`TipoUsuario.java`** — o enum com atributos, decidindo o limite de itens;
 4. **`Coordenada` + `Endereco`** — dois `record` com validação;
-5. **Desafio 🌶️** — modele um sistema do seu dia a dia. **Sem escrever código.** Pode virar seu projeto final.
+5. **Desafio 🌶️** — modele um sistema do seu dia a dia. **Sem escrever código.** Pode virar o sistema da Aula 15.
 
 ---
 

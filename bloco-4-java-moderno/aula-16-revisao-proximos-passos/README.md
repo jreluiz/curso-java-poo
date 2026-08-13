@@ -135,7 +135,7 @@ Cada `@Test` é um cenário; `assertEquals` confere um resultado; `assertThrows`
 
 Por que isso muda a vida: com testes, mexer no código deixa de dar medo. Você refatora, roda a suíte e sabe **na hora** se quebrou alguma coisa.
 
-> 💡 Para experimentar no IntelliJ: clique no nome da classe → `Alt + Insert` → *Test...* → JUnit 5 → aceite adicionar a dependência. Escreva dois testes para uma classe do seu projeto final; é um ótimo extra na entrega.
+> 💡 Para experimentar no IntelliJ: clique no nome da classe → `Alt + Insert` → *Test...* → JUnit 5 → aceite adicionar a dependência. Escreva dois testes para uma classe do sistema que você montou na Aula 15.
 
 ## 4. Para onde ir agora
 
@@ -189,7 +189,7 @@ git push
 
 Chegou até aqui? Você escreveu classes, hierarquias, interfaces, coleções, exceções, arquivos e streams — e entregou tudo versionado. Isso é programação orientada a objetos de verdade. 👏
 
-Agora vá terminar aquele projeto final. 🚀
+Agora vá terminar aquele sistema da Aula 15. 🚀
 
 ---
 

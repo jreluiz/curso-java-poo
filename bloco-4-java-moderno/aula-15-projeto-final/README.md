@@ -1,9 +1,16 @@
-# Aula 15 — Projeto Final
+# Aula 15 — Laboratório: do requisito ao sistema
 
 > 🎯 Objetivos: escolher um tema viável, sair do requisito para o diagrama de classes, desenvolver com commits que contam a história e revisar o código de um colega.
 > 🎬 Slides da aula: [apresentacao-15-projeto-final.pdf](apresentacao/apresentacao-15-projeto-final.pdf)
 
-Nesta aula você não aprende conceito novo: você **usa todos**. O enunciado completo, com requisitos e critérios, está em [projetos/projeto-final.md](../../projetos/projeto-final.md) — leia antes de continuar.
+Nesta aula você não aprende conceito novo: você **usa todos**. A tarefa é construir um sistema de console que sobrevive ao próprio uso — e a régua é esta:
+
+- **Mínimo de 5 classes próprias**, separadas em `model`, `service` e `app`;
+- Uma **classe abstrata** com método abstrato implementado de formas diferentes, e pelo menos **uma interface** atravessando hierarquias distintas;
+- **Polimorfismo de verdade**: uma coleção percorrida por um laço só, sem `if` de tipo;
+- Atributos `private`/`protected` com **validação** que impeça objeto em estado inválido;
+- Pelo menos **uma exceção personalizada**, lançada no `service` e tratada no `app`;
+- **Nenhuma entrada derruba o programa**, **persistência em arquivo** e **um relatório com stream**.
 
 ## 1. Escolhendo o tema (e o escopo)
 
@@ -107,7 +114,7 @@ Anote o retorno recebido **em issues** do seu repositório (uma por ponto). Reso
 
 ```bash
 git add .
-git commit -m "Modelagem inicial do projeto final"
+git commit -m "Modelagem inicial do sistema"
 git push
 ```
 

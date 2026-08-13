@@ -3,7 +3,7 @@
 Um diagrama de classes é a **planta baixa** do seu sistema: mostra quais classes existem, o que cada uma guarda e como elas se relacionam. Serve para duas coisas no curso:
 
 1. **Pensar antes de digitar** — modelar no papel custa minutos; refatorar código custa horas;
-2. **Comunicar** — é o que vai no README dos projetos, para alguém entender seu sistema sem ler 400 linhas.
+2. **Comunicar** — é o que vai no README do que você entrega, para alguém entender seu sistema sem ler 400 linhas.
 
 Usamos uma versão **simplificada da UML**: só o suficiente para conversar.
 
@@ -66,7 +66,7 @@ classDiagram
 
 ## Escrevendo no README com Mermaid
 
-O GitHub renderiza Mermaid direto no Markdown — é o formato pedido nos projetos. Basta um bloco de código com a linguagem `mermaid`:
+O GitHub renderiza Mermaid direto no Markdown — é o formato pedido no curso. Basta um bloco de código com a linguagem `mermaid`:
 
 ````markdown
 ```mermaid

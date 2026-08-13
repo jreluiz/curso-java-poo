@@ -21,7 +21,7 @@
 
 ## 📐 Diagramas de classes
 
-- [Mermaid — Class Diagram](https://mermaid.js.org/syntax/classDiagram.html) — desenha diagrama **dentro do README**, e o GitHub renderiza sozinho (é o que usamos nos projetos);
+- [Mermaid — Class Diagram](https://mermaid.js.org/syntax/classDiagram.html) — desenha diagrama **dentro do README**, e o GitHub renderiza sozinho (é o que usamos no curso);
 - [PlantUML online](https://www.plantuml.com/plantuml/uml/) — alternativa, exporta imagem;
 - [Guia rápido do curso](diagrama-de-classes.md).
 

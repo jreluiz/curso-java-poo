@@ -1,6 +1,6 @@
 # Aula 15 — Revisão: Múltipla Escolha
 
-> 🎯 8 questões sobre a [Aula 15 — Projeto Final](../README.md) e as decisões de modelagem do curso. Só uma alternativa está correta em cada uma.
+> 🎯 8 questões sobre a [Aula 15 — Laboratório: do requisito ao sistema](../README.md) e as decisões de modelagem do curso. Só uma alternativa está correta em cada uma.
 
 **Sem gabarito, de propósito.** Cada questão termina com a seção da aula onde a resposta está. Responda **tudo primeiro**, sem consultar — só depois volte às seções indicadas e corrija.
 
@@ -60,7 +60,7 @@ Uma capacidade compartilhada por classes **sem parentesco** entre si (emprestáv
 
 ### Q-A15-05
 
-Qual estratégia de commits o curso recomenda para o projeto final?
+Qual estratégia de commits o curso recomenda para o sistema do laboratório?
 
 - **a)** Um commit por dia, independentemente do que foi feito;
 - **b)** um único commit final, com o projeto pronto e testado;
