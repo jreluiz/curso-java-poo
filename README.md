@@ -92,6 +92,26 @@ Consulte o [guia de preparação do ambiente](recursos/ambiente.md): JDK, Intell
 - 🔗 [Links úteis](recursos/links-uteis.md)
 - 📚 [Curso de Git e GitHub](https://github.com/jreluiz/curso-git-github) (pré-requisito)
 
+## 📚 Bibliografia
+
+**Livro-base:**
+
+- DEITEL, Paul; DEITEL, Harvey. **Java: como programar**. 10. ed. São Paulo: Pearson, 2017.
+
+**Bibliografia de apoio:**
+
+| Obra | Onde ela ajuda mais |
+|---|---|
+| SIERRA, Kathy; BATES, Bert. **Use a cabeça! Java**. 2. ed. Rio de Janeiro: Alta Books, 2007. | Blocos 1 e 2 — a linguagem e os pilares explicados devagar; é o livro para **ler junto** com as aulas |
+| SANTOS, Rafael. **Introdução à programação orientada a objetos usando Java**. 2. ed. Rio de Janeiro: Elsevier, 2013. | Bloco 2 — POO escrita em português e com olhar acadêmico, do encapsulamento ao polimorfismo |
+| BLOCH, Joshua. **Java efetivo: as melhores práticas para a plataforma Java**. 3. ed. Rio de Janeiro: Alta Books, 2019. | Blocos 2 e 4 — por que sobrescrever `equals()` junto com `hashCode()`, e o capítulo de lambdas e streams |
+| FOWLER, Martin. **UML essencial**. 3. ed. Porto Alegre: Bookman, 2005. | Aula 11 — diagrama de classes: o que cada seta significa e o que não vale a pena desenhar |
+| ORACLE. **The Java® language specification**. Edição corrente. | a norma da linguagem: a resposta final quando duas fontes discordam |
+
+**O que é gratuito e vale abrir agora:** os [Java Tutorials da Oracle](https://dev.java/learn/), a [documentação da API](https://docs.oracle.com/en/java/javase/21/docs/api/index.html) — que você vai consultar em quase toda aula — e a própria [especificação da linguagem](https://docs.oracle.com/javase/specs/).
+
+**O curso é autocontido** — os livros são o passo seguinte, não um pré-requisito. As referências de consulta diária, as ferramentas e os sites de prática estão em [Links úteis](recursos/links-uteis.md).
+
 ---
 
 *Este repositório continua evoluindo — exemplos e materiais novos são commitados aqui. Primeiro passo de toda sessão de estudo: `git pull`.* 🙂
