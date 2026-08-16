@@ -239,17 +239,22 @@ Na pasta `aula-05/` do seu repositório (cada classe em seu próprio arquivo!):
 4. **`Retangulo.java` + `Geometria.java`** — a classe recebe `base` e `altura` **pelo construtor** e oferece `calcularArea()`, `calcularPerimetro()` e `ehQuadrado()`. Crie um `Retangulo[]` com 3 objetos e imprima a área de todos com um `for-each`;
 5. **Desafio 🌶️ `Aluno.java` + `Turma.java`** — refaça o Desafio da Aula 04 (boletim de 3 alunos) usando a classe `Aluno` com construtor, um `Aluno[]` e um laço. No fim do arquivo, escreva num comentário **quantas linhas** cada versão tem e o que ficou mais fácil de mudar.
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-java-poo`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-05/
+git commit -m "Resolve exercícios da aula 05"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-java-poo`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-05/
-git commit -m "Resolve exercícios da aula 05 (classes e objetos)"
-git push
-```
 
 ---
 

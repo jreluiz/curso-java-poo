@@ -271,17 +271,22 @@ Na pasta `aula-11/` do seu repositório:
 4. **`Coordenada.java` + `Endereco.java`** — crie dois `record` com validação no construtor compacto e mostre no `main` o `toString` e o `equals` funcionando de graça (dois records com os mesmos dados são iguais);
 5. **Desafio 🌶️ `DiagramaDoSeuProjeto.md`** — escolha um sistema do seu dia a dia (academia, lanchonete, escala de plantão) e produza: (a) a lista de classes com atributos e métodos, (b) um diagrama Mermaid com **pelo menos** uma herança, uma interface e uma composição, e (c) o Javadoc dos três métodos principais — **sem escrever o código**. Guarde: pode virar o sistema do laboratório da Aula 15.
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-java-poo`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-11/
+git commit -m "Resolve exercícios da aula 11"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-java-poo`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-11/
-git commit -m "Resolve exercícios da aula 11 (organização e pacotes)"
-git push
-```
 
 ---
 

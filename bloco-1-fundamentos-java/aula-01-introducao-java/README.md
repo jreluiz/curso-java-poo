@@ -156,17 +156,22 @@ Na pasta `aula-01/` do seu repositório:
 4. **`Corrigir.java`** — crie um arquivo `Corrigir.java` cuja classe se chama `Consertar`. Rode `javac`, leia o erro, e escreva **num comentário** qual é a regra do Java que foi violada. Depois corrija;
 5. **Desafio 🌶️ `Arte.java`** — imprima um desenho em ASCII (uma casa, um gato, seu nome em letras grandes) usando `\n`, `\t` e pelo menos um `\"`. Um único `System.out.println` para o desenho inteiro.
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-java-poo`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-01/
+git commit -m "Resolve exercícios da aula 01"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-java-poo`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-01/
-git commit -m "Resolve exercícios da aula 01 (introdução ao Java)"
-git push
-```
 
 ---
 

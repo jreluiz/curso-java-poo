@@ -203,17 +203,22 @@ Na pasta `aula-14/` do seu repositório:
 4. **`Busca.java`** — troque um `buscarPorX` que devolvia `null` por um que devolve `Optional`; mostre no `main` os três desfechos: `ifPresent`, `orElse` com valor padrão e `orElseThrow` com exceção personalizada;
 5. **Desafio 🌶️ `Estatisticas.java`** — a partir de um CSV de vendas carregado com o que você aprendeu na Aula 13, produza com streams: faturamento total, faturamento **por categoria** (`groupingBy`), os 3 produtos mais vendidos, o ticket médio e a lista de produtos que nunca venderam. Grave o relatório em arquivo.
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-java-poo`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-14/
+git commit -m "Resolve exercícios da aula 14"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-java-poo`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-14/
-git commit -m "Resolve exercícios da aula 14 (lambdas e streams)"
-git push
-```
 
 ---
 

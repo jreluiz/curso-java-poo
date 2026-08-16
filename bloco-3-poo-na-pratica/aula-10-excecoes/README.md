@@ -205,17 +205,22 @@ Na pasta `aula-10/` do seu repositório:
 4. **`Cadastro.java`** — método `cadastrar(String nome, int idade)` que lança `IllegalArgumentException` se o nome for vazio/nulo ou se a idade estiver fora de 0–120; um `main` que testa 4 casos (um válido, três inválidos) e imprime a mensagem de cada falha;
 5. **Desafio 🌶️ `Biblioteca.java`** — sistema de empréstimo com **três** exceções personalizadas: `LivroNaoEncontradoException`, `LivroIndisponivelException` e `LimiteDeEmprestimosException` (máximo 3 por usuário). O menu em `do-while` **nunca** pode quebrar: qualquer entrada, em qualquer opção, resulta em mensagem amigável. Este exercício é um esboço do projeto da Aula 12 — capriche.
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-java-poo`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-10/
+git commit -m "Resolve exercícios da aula 10"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-java-poo`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-10/
-git commit -m "Resolve exercícios da aula 10 (exceções)"
-git push
-```
 
 ---
 

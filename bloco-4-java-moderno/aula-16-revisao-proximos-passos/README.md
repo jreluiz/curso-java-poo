@@ -173,17 +173,22 @@ Na pasta `aula-16/` do seu repositório:
 4. **`Duvidas.md`** — liste os **três** assuntos do curso em que você menos confia e, para cada um, o exercício que vai refazer para fechar a lacuna;
 5. **Desafio 🌶️ `README.md` do perfil** — crie (ou atualize) o README do seu perfil do GitHub com uma seção sobre Java: o que você sabe, os projetos deste curso com link, e o próximo passo escolhido na seção 4. É o seu portfólio começando.
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-java-poo`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-16/
+git commit -m "Resolve exercícios da aula 16"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-java-poo`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) revisando o curso inteiro. Responda sem consultar — depois volte às aulas indicadas.
-
-## ✅ Entrega
-
-```bash
-git add aula-16/
-git commit -m "Resolve exercícios da aula 16 (revisão e próximos passos)"
-git push
-```
 
 ---
 

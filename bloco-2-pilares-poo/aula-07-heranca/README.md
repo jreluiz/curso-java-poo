@@ -254,17 +254,22 @@ Na pasta `aula-07/` do seu repositório:
 4. **`Veiculo.java`, `Carro.java`, `Moto.java`** — `Veiculo` tem `marca`, `modelo`, `ano` e `calcularIpva()` (4% do valor); `Carro` acrescenta `portas`; `Moto` sobrescreve `calcularIpva()` para 2%. Imprima o IPVA dos dois;
 5. **Desafio 🌶️ `Funcionario.java` + subclasses** — `Funcionario` (abstrata na prática: nome, matrícula, `salarioBase`) com `Gerente` (bônus de 20% + auxílio fixo), `Vendedor` (salário base + comissão sobre as vendas do mês) e `Estagiario` (bolsa fixa, sem 13º). Cada subclasse sobrescreve `calcularSalario()`. No `main`, crie um `Funcionario[]` com os três e imprima a folha de pagamento total — repare que o mesmo laço trata os três tipos: é o gancho da Aula 08.
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-java-poo`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-07/
+git commit -m "Resolve exercícios da aula 07"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-java-poo`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-07/
-git commit -m "Resolve exercícios da aula 07 (herança)"
-git push
-```
 
 ---
 

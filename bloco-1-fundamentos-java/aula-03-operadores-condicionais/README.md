@@ -184,17 +184,22 @@ Na pasta `aula-03/` do seu repositório:
 4. **`Bissexto.java`** — leia um ano e diga se é bissexto: divisível por 4, **exceto** se divisível por 100, **a não ser** que seja divisível por 400. Monte a expressão com `&&`, `||` e `%` (teste com 2024 ✅, 1900 ❌, 2000 ✅);
 5. **Desafio 🌶️ `Ingresso.java`** — leia idade, se é estudante (`s`/`n`) e o dia da semana; calcule o preço a partir de `final double INTEIRA = 40.0`: meia para menores de 18, idosos e estudantes; terça-feira tem 20% de desconto adicional sobre o valor já calculado. Imprima com `printf` e uma linha explicando quais descontos foram aplicados.
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-java-poo`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-03/
+git commit -m "Resolve exercícios da aula 03"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-java-poo`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-03/
-git commit -m "Resolve exercícios da aula 03 (operadores e condicionais)"
-git push
-```
 
 ---
 

@@ -187,17 +187,22 @@ Na pasta `aula-09/` do seu repositório:
 4. **`Agenda.java`** — um `Map<String, String>` de nome → telefone com menu (adicionar, buscar, remover, listar tudo). Trate a busca sem resultado sem deixar o programa quebrar;
 5. **Desafio 🌶️ `Estoque.java`** — `Map<String, Produto>` indexado pelo código do produto, com: cadastro (rejeitando código repetido), venda (que baixa a quantidade e recusa estoque insuficiente), relatório de produtos com estoque abaixo do mínimo e o **valor total** do estoque. Some ainda um `Set<String>` com as categorias já cadastradas, sem repetição.
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-java-poo`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-09/
+git commit -m "Resolve exercícios da aula 09"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-java-poo`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-09/
-git commit -m "Resolve exercícios da aula 09 (coleções)"
-git push
-```
 
 ---
 

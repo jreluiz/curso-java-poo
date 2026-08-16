@@ -219,17 +219,22 @@ Na pasta `aula-06/` do seu repositório:
 4. **`Data.java`** — três construtores sobrecarregados: `Data(int dia, int mes, int ano)`, `Data(int dia, int mes)` (ano atual, 2026) e `Data()` (01/01/2026). Use `this(...)` para que os dois primeiros deleguem ao completo, e valide mês de 1 a 12;
 5. **Desafio 🌶️ `CofrePorcos.java`** — um cofre que aceita moedas de 5, 10, 25, 50 centavos e R$ 1,00 (qualquer outro valor é rejeitado com aviso), guarda o total, conta quantas moedas de cada tipo entraram e só permite `quebrar()` se o total passar de R$ 20,00 — zerando tudo e devolvendo o valor. Nenhum atributo público, nenhum setter.
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-java-poo`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-06/
+git commit -m "Resolve exercícios da aula 06"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-java-poo`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-06/
-git commit -m "Resolve exercícios da aula 06 (encapsulamento)"
-git push
-```
 
 ---
 

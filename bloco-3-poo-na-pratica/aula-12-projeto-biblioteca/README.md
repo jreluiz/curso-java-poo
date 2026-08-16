@@ -438,17 +438,22 @@ git push
 
 > 💡 Guarde este projeto. Na Aula 13 ele ganha **persistência em arquivo** — e passa a lembrar dos dados entre execuções.
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-java-poo`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-12/
+git commit -m "Resolve exercícios da aula 12"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-java-poo`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add .
-git commit -m "Projeto guiado da aula 12 concluído (sistema de biblioteca)"
-git push
-```
 
 ---
 

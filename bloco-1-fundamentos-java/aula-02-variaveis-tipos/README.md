@@ -181,17 +181,22 @@ Na pasta `aula-02/` do seu repositório:
 4. **`Calculadora.java`** — leia dois números `double` do teclado com `Scanner` e imprima soma, subtração, multiplicação, divisão e resto (use `%.2f`);
 5. **Desafio 🌶️ `Imc.java`** — leia nome, peso e altura do teclado; calcule o IMC (`peso / (altura * altura)`) e imprima assim: `Maria, seu IMC é 21,45`. Use `nextLine()` depois do último número lido e explique **num comentário** por que ele foi necessário.
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-java-poo`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-02/
+git commit -m "Resolve exercícios da aula 02"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-java-poo`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-02/
-git commit -m "Resolve exercícios da aula 02 (variáveis e tipos)"
-git push
-```
 
 ---
 

@@ -201,19 +201,22 @@ Na pasta `aula-13/` do seu repositório:
 4. **`Relatorio.java`** — leia um CSV de vendas (`produto;quantidade;valor`), calcule total geral, produto mais vendido e média por venda, e **grave o resultado** num `relatorio.txt` formatado;
 5. **Desafio 🌶️ `BibliotecaPersistente/`** — acrescente persistência ao projeto da Aula 12: salvar/carregar **acervo, usuários e empréstimos** (três arquivos), preservando o vínculo entre eles (dica: grave o **código** do item e o **id** do usuário no empréstimo, e reconecte os objetos ao carregar). Salve após cada operação que altera dados.
 
-## 🧠 Revisão
+### 📤 Entrega
 
-[8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-java-poo`:
 
 ```bash
+cd ..                 # da pasta da aula para a raiz do repositório
 git add aula-13/
-git commit -m "Resolve exercícios da aula 13 (arquivos e persistência)"
+git commit -m "Resolve exercícios da aula 13"
 git push
 ```
 
-> ⚠️ **Não versione a pasta `dados/`** — arquivos gerados pelo programa não vão para o Git. Acrescente `dados/` ao seu `.gitignore`.
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-java-poo`.
+
+## 🧠 Revisão
+
+[8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
 
 ---
 

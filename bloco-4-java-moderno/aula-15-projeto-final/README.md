@@ -106,17 +106,22 @@ Anote o retorno recebido **em issues** do seu repositório (uma por ponto). Reso
 2. Faça a revisão em par e abra as issues do retorno recebido;
 3. Escreva no README a seção **"O que ainda falta"** com sua lista de tarefas — e vá riscando.
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-java-poo`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-15/
+git commit -m "Resolve exercícios da aula 15"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-java-poo`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) sobre modelagem, camadas e as decisões de projeto do curso. Responda sem consultar as aulas — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add .
-git commit -m "Modelagem inicial do sistema"
-git push
-```
 
 ---
 

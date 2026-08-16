@@ -212,17 +212,22 @@ Na pasta `aula-08/` do seu repositório:
 4. **`Pagamento.java` + `Pix.java`, `CartaoCredito.java`, `Boleto.java`** — interface `Pagamento` com `double calcularTaxa(double valor)` e `String descricao()`; Pix sem taxa, cartão com 3,5% + parcelamento, boleto com R$ 2,50 fixo. Um `main` recebe o valor da compra e imprime o total em cada forma;
 5. **Desafio 🌶️ `Reprodutor.java`** — modele um player de mídia: classe abstrata `Midia` (título, duração, `reproduzir()` abstrato), com `Musica`, `Podcast` e `Video`; a interface `Baixavel` (`baixar()`, `getTamanhoMb()`) é implementada só por `Musica` e `Video`. Uma "playlist" (`Midia[]`) reproduz tudo em sequência e, num segundo laço, baixa **apenas** o que for baixável — use `instanceof` com pattern matching aqui e explique num comentário por que, neste caso, ele se justifica.
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-java-poo`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-08/
+git commit -m "Resolve exercícios da aula 08"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-java-poo`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-08/
-git commit -m "Resolve exercícios da aula 08 (polimorfismo e abstração)"
-git push
-```
 
 ---
 

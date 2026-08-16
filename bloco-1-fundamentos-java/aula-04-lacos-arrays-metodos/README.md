@@ -212,17 +212,22 @@ Na pasta `aula-04/` do seu repositório:
    ```
 5. **Desafio 🌶️ `Boletim.java`** — leia o nome e 3 notas de **3 alunos** usando arrays paralelos (`String[] nomes`, `double[][] notas`), calcule a média de cada um e imprima um boletim alinhado com `printf`. Ao terminar, escreva num comentário **o que foi mais chato** nessa abordagem — na próxima aula você resolve isso com uma classe.
 
+### 📤 Entrega
+
+Estes exercícios são feitos em sala e vão para o **seu repositório** `exercicios-java-poo`:
+
+```bash
+cd ..                 # da pasta da aula para a raiz do repositório
+git add aula-04/
+git commit -m "Resolve exercícios da aula 04"
+git push
+```
+
+Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-java-poo`.
+
 ## 🧠 Revisão
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
-
-## ✅ Entrega
-
-```bash
-git add aula-04/
-git commit -m "Resolve exercícios da aula 04 (laços, arrays e métodos)"
-git push
-```
 
 ---
 
