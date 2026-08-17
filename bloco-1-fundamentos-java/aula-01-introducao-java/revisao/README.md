@@ -4,6 +4,10 @@
 
 **Sem gabarito, de propósito.** Cada questão termina com a seção da aula onde a resposta está. Responda **tudo primeiro**, sem consultar — só depois volte às seções indicadas e corrija.
 
+📝 **As respostas vão pelo formulário:** [responder a revisão da Aula 01](https://docs.google.com/forms/d/e/1FAIpQLScu0RhWTPPv4arLaMCqxKxJIohNY0ndRXNYRuIbphkbyY1B3Q/viewform)
+
+Leia as 8 questões aqui e decida suas respostas antes de abrir o formulário: é **uma resposta por aluno**, com conta Google, e não dá para editar depois de enviar. Ele também pede seu usuário do GitHub. Se o seu nome não estiver na lista da turma, marque a última opção e escreva o nome completo no campo seguinte.
+
 ---
 
 ### Q-A01-01
