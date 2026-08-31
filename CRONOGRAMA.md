@@ -5,8 +5,8 @@
 ## 1º Bimestre — fundamentos e pilares da POO
 
 - [x] **14/08** · Aula 01 — [Introdução ao Java](bloco-1-fundamentos-java/aula-01-introducao-java/README.md)
-- [ ] **21/08** · Aula 02 — [Variáveis e tipos](bloco-1-fundamentos-java/aula-02-variaveis-tipos/README.md)
-- [ ] **28/08** · Aula 03 — [Operadores e condicionais](bloco-1-fundamentos-java/aula-03-operadores-condicionais/README.md)
+- [x] **21/08** · Aula 02 — [Variáveis e tipos](bloco-1-fundamentos-java/aula-02-variaveis-tipos/README.md)
+- [x] **28/08** · Aula 03 — [Operadores e condicionais](bloco-1-fundamentos-java/aula-03-operadores-condicionais/README.md)
 - [ ] **04/09** · Aula 04 — [Laços, arrays e métodos](bloco-1-fundamentos-java/aula-04-lacos-arrays-metodos/README.md) · fecha o Bloco 1
 - [ ] **11/09** · Aula 05 — [Classes e objetos](bloco-2-pilares-poo/aula-05-classes-objetos/README.md)
 - [ ] **18/09** · Aula 06 — [Encapsulamento](bloco-2-pilares-poo/aula-06-encapsulamento/README.md)

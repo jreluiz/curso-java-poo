@@ -17,6 +17,10 @@ dados/
 # Gabaritos das questões de múltipla escolha (uso do professor — NUNCA versionar)
 gabaritos/
 
+respostas/
+
+recursos/notas/
+
 # Editor e sistema operacional
 .idea/
 *.iml
