@@ -256,6 +256,10 @@ Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
 
+**A entrega é pelo formulário:** [responder a revisão da Aula 05](https://docs.google.com/forms/d/e/1FAIpQLSf0qAdzbasNwJpnCYA61aEIx9P5HktNtc9NtotMTQofPWWIKQ/viewform)
+
+Entre com uma conta Google, selecione seu nome na lista e informe seu usuário do GitHub — só o usuário, não o endereço do perfil. Se o seu nome ainda não estiver na lista, marque a última opção e escreva o nome completo no campo seguinte. É **uma resposta por aluno** e não dá para editar depois de enviar, então confira antes. A nota é liberada no AVA depois da revisão em sala e da divulgação do gabarito.
+
 ---
 
 ⬅️ [Aula 04](../../bloco-1-fundamentos-java/aula-04-lacos-arrays-metodos/README.md) | ➡️ [Aula 06 — Encapsulamento](../aula-06-encapsulamento/README.md)
