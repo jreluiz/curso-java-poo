@@ -20,11 +20,20 @@ footer: '☕ Curso de Java e POO · Aula 05'
 
 ## 🎯 Nesta aula
 
-1. O problema que a POO resolve
+1. O **problema** que a POO resolve
 2. **Classe** × **objeto**
-3. Sua primeira classe
+3. Sua primeira classe — atributos e métodos
 4. `new`, **referência** e `null`
 5. **Construtores** e `this`
+6. O primeiro **diagrama de classes**
+
+---
+
+## Onde a Aula 04 parou
+
+![w:700](img/arrays-paralelos.svg)
+
+Some um telefone: **mais um array**. Ordene por nome: **bagunçou tudo**.
 
 ---
 
@@ -47,39 +56,54 @@ e o que cada uma sabe e sabe fazer?"**
 
 Existe uma coisa chamada **aluno**.
 
-Ele **sabe** um nome, uma matrícula e algumas notas.
+Ele **sabe** um nome, uma matrícula e algumas notas — é o **estado** dele.
 
-E ele **sabe fazer** uma coisa: calcular a própria média.
+E ele **sabe fazer** uma coisa: calcular a própria média — é o **comportamento** dele.
 
-Dados e comportamento **juntos** — isto é o objeto.
+Dados e comportamento **juntos, no mesmo lugar**: isto é o objeto.
 
 ---
-
-<!-- _class: diagrama -->
 
 ## Classe é a planta; objeto é a construção
 
-![w:900](img/classe-e-objetos.svg)
+![w:680](img/classe-e-objetos.svg)
+
+A **classe** é escrita **uma vez** e descreve o formato. O **objeto** é cada exemplar criado a partir dela, com seus próprios valores.
 
 ---
 
-## Sua primeira classe
+## Sua primeira classe — o que ele sabe
+
+Crie `Aluno.java` **sem `main`**: não é um programa, é um **modelo**.
 
 ```java
 public class Aluno {
-    String nome;                     // ATRIBUTOS: o que ele SABE
+    // ATRIBUTOS: o que o aluno SABE (o estado dele)
+    String nome;
+    String matricula;
     double[] notas = new double[3];
+}
+```
 
-    double calcularMedia() {         // MÉTODOS: o que ele SABE FAZER
+Cada objeto criado a partir daqui terá **os seus próprios** valores.
+
+---
+
+## Sua primeira classe — o que ele sabe fazer
+
+```java
+    double calcularMedia() {
         double soma = 0;
         for (double nota : notas) soma += nota;
         return soma / notas.length;
     }
-    boolean estaAprovado() { return calcularMedia() >= 7; }
-}
+
+    boolean estaAprovado() {
+        return calcularMedia() >= 7;   // um método usa outro da mesma classe
+    }
 ```
 
-**Sem `main`** — não é um programa, é um modelo.
+`estaAprovado()` chama `calcularMedia()` **sem passar nada**: os dois falam do mesmo objeto.
 
 ---
 
@@ -87,7 +111,8 @@ public class Aluno {
 
 ## 👀 Repare no que sumiu
 
-Nenhum método recebe o array de notas por parâmetro.
+Nenhum método recebe
+o array de notas por parâmetro.
 
 `calcularMedia()` **já sabe** de quais notas
 está falando: as do **próprio objeto**.
@@ -102,17 +127,29 @@ e um método de instância.
 ```java
 public class Escola {
     public static void main(String[] args) {
-        Aluno ana = new Aluno();       // cria um objeto na memória
-        ana.nome = "Ana";              // o ponto acessa o que é do objeto
+        Aluno ana = new Aluno();      // cria um objeto na memória
+        ana.nome = "Ana";             // o ponto acessa o que é do objeto
         ana.notas[0] = 8.0;
 
-        Aluno leo = new Aluno();       // outro objeto, independente
+        Aluno leo = new Aluno();      // outro objeto, independente
         leo.nome = "Léo";
-
-        ana.imprimirBoletim();
     }
 }
 ```
+
+Dois objetos independentes: mexer em `leo` **não toca** em `ana`.
+
+---
+
+## Dois arquivos, um comando
+
+`Aluno.java` e `Escola.java`, na **mesma pasta**. Só um dos dois tem `main`.
+
+```bash
+java Escola.java     # o Java encontra e compila Aluno.java junto
+```
+
+Você roda o arquivo que **tem o `main`**. O outro é encontrado sozinho, porque `Escola` menciona `Aluno`.
 
 ---
 
@@ -120,9 +157,9 @@ public class Escola {
 
 `calcularMedia()` **não** é `static` porque depende de **qual** aluno.
 
-`main` **é** `static` porque precisa existir antes de qualquer objeto.
+`main` **é** `static` porque precisa existir **antes** de qualquer objeto.
 
-Chamar método de instância direto do `main`, sem objeto:
+Chamar um método de instância direto do `main`, sem objeto:
 
 ```
 error: non-static method cannot be referenced
@@ -133,29 +170,35 @@ error: non-static method cannot be referenced
 
 ---
 
-## `new` e referência
+## `new` faz três coisas numa linha só
+
+![w:1050](img/new-em-tres-passos.svg)
+
+E a ordem importa menos que o fato: **a variável não guarda o objeto**.
+
+---
+
+## A variável guarda uma referência
+
+`ana` não é o aluno — é um **endereço** que aponta para ele. E isso muda tudo:
 
 ```java
-Aluno ana = new Aluno();
-```
+Aluno a = new Aluno();
+a.nome = "Ana";
 
-Três coisas numa linha: `new Aluno()` **cria o objeto**, `Aluno ana` **declara a variável**, e o `=` **guarda o endereço** nela.
-
-A variável **não guarda o objeto** — guarda uma **referência** a ele.
-
-```java
 Aluno b = a;              // NÃO copia: dá um segundo nome ao MESMO objeto
 b.nome = "Beatriz";
+
 System.out.println(a.nome);   // Beatriz 😱
 ```
 
 ---
 
-<!-- _class: diagrama -->
-
 ## Um objeto, dois apelidos
 
-![w:640](img/duas-referencias.svg)
+![w:760](img/duas-referencias.svg)
+
+Para ter **dois alunos de verdade**, são **dois `new`**.
 
 ---
 
@@ -170,12 +213,14 @@ c.nome;        // 💥
 
 O erro de execução **mais comum do Java**.
 
-E a causa é quase sempre a mesma:
-**faltou um `new`** — ou uma busca não encontrou nada.
+A causa é quase sempre a mesma: **faltou um `new`** —
+ou uma busca não encontrou nada e devolveu `null`.
 
 ---
 
 ## Construtores: nascer já pronto
+
+Preencher atributo por atributo é verboso — e permite **objetos pela metade**, como um aluno sem nome.
 
 ```java
 public class Aluno {
@@ -183,28 +228,57 @@ public class Aluno {
 
     // mesmo nome da classe, SEM tipo de retorno (nem void!)
     public Aluno(String nome, String matricula) {
-        this.nome = nome;      // this.nome = atributo; nome = parâmetro
+        this.nome = nome;
         this.matricula = matricula;
     }
 }
 ```
 
-Agora `new Aluno()` **não compila**: objeto pela metade deixou de ser possível.
+---
+
+## Objeto pela metade deixou de ser possível
+
+```java
+Aluno ana = new Aluno("Ana", "1001");    // ✅
+Aluno x   = new Aluno();                 // ❌
+```
+
+O compilador recusa, com esta mensagem:
+
+```
+error: constructor Aluno cannot be applied to given types
+```
+
+O construtor virou a **única porta de entrada** — e ela exige aquilo de que o objeto precisa para existir.
 
 ---
 
 ## O que é `this`
 
-A referência ao **objeto atual** — "eu mesmo".
+`this` é a referência ao **objeto atual** — "eu mesmo".
 
-Obrigatório quando o parâmetro tem o mesmo nome do atributo:
+Ele é obrigatório quando o parâmetro tem o **mesmo nome** do atributo, para desfazer a ambiguidade:
 
 ```java
 this.nome = nome;    // "o MEU nome recebe o nome que veio de fora"
 nome = nome;         // ❌ o parâmetro atribui a si mesmo; o atributo fica null
 ```
 
-> ⚠️ **Ao escrever qualquer construtor, o construtor vazio deixa de existir.** Se quiser os dois, declare os dois — assunto da aula 06.
+O `this.` da esquerda é o **atributo**; o `nome` solto é o **parâmetro**.
+
+---
+
+<!-- _class: lead -->
+
+## ⚠️ Escreveu um construtor?
+
+O construtor **vazio deixa de existir**.
+
+Antes você podia dar `new Aluno()`.
+Depois de declarar `Aluno(String, String)`,
+não pode mais —
+
+a não ser que declare **os dois**.
 
 ---
 
@@ -216,7 +290,7 @@ Objetos cabem num array **como qualquer outro valor**:
 Aluno[] turma = new Aluno[3];
 turma[0] = new Aluno("Ana", "1001");
 turma[1] = new Aluno("Léo", "1002");
-
+turma[2] = new Aluno("Duda", "1003");
 for (Aluno aluno : turma) {
     aluno.imprimirBoletim();     // cada um usa os PRÓPRIOS dados
 }
@@ -224,7 +298,24 @@ for (Aluno aluno : turma) {
 
 **Um array. Três objetos completos. Zero sincronização manual.**
 
-Compare com o desafio da aula 04.
+---
+
+<!-- _class: diagrama -->
+
+## O primeiro diagrama de classes
+
+![w:420](img/diagrama-classe-aluno.svg)
+
+---
+
+## 💡 Como decidir o que vira classe
+
+Procure no enunciado:
+
+- os **substantivos** — `Livro`, `Cliente`, `Produto` — são candidatos a **classe**;
+- os **verbos que pertencem a eles** — `emprestar()`, `calcularTotal()` — são candidatos a **método**.
+
+O teste: se um substantivo tem **dados** *e* **comportamento** próprios, ele merece uma classe. É essa leitura que os exercícios pedem.
 
 ---
 
@@ -236,7 +327,7 @@ Na pasta `aula-05/`, cada classe em seu arquivo:
 
 1. **`Livro` + `Estante`** — `emprestar()`, `devolver()`, `exibirFicha()`;
 2. **`ContaBancaria` + `Banco`** — `depositar`, `sacar` com aviso, `exibirExtrato`;
-3. **`Referencia.java`** — duas variáveis, um objeto. Explique o resultado. E provoque um `NullPointerException`;
+3. **`Referencia.java`** — duas variáveis, um objeto. E provoque um `NullPointerException`;
 4. **`Retangulo` + `Geometria`** — construtor, `calcularArea()`, `ehQuadrado()`;
 5. **Desafio 🌶️** — refaça o boletim da aula 04 com classe. **Quantas linhas** cada versão tem?
 

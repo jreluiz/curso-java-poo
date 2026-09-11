@@ -1,0 +1,32 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 24px
+    lineColor: "#e76f00"
+    primaryColor: "#fdf1e6"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#e76f00"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 30
+    rankSpacing: 55
+    padding: 16
+    wrappingWidth: 600
+---
+flowchart TD
+    A1["String[] nomes<br/>———<br/>[0] Ana<br/>[1] Léo<br/>[2] Duda"]
+    A2["String[] matriculas<br/>———<br/>[0] 1001<br/>[1] 1002<br/>[2] 1003"]
+    A3["double[][] notas<br/>———<br/>[0] 8, 7, 9<br/>[1] 5, 6, 4<br/>[2] 9, 9, 8"]
+    V["os dados de UM aluno em TRÊS lugares —<br/>e é você quem lembra que o índice [2]<br/>é a mesma pessoa nos três"]
+
+    A1 --- V
+    A2 --- V
+    A3 --- V
+
+    classDef arr fill:#ffffff,stroke:#8f8f8f,stroke-width:3px,color:#1a1a1a
+    classDef alerta fill:#fbeae7,stroke:#b02a1c,stroke-width:3px,color:#1a1a1a
+    class A1,A2,A3 arr
+    class V alerta
+    linkStyle default stroke:#b02a1c,stroke-width:3px

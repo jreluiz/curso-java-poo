@@ -1,0 +1,32 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 24px
+    lineColor: "#e76f00"
+    primaryColor: "#fdf1e6"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#e76f00"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 26
+    rankSpacing: 55
+    padding: 16
+    wrappingWidth: 600
+---
+flowchart TD
+    L["Aluno ana = new Aluno();"]
+    D["<b>Aluno ana</b><br/>DECLARA uma variável<br/>capaz de apontar<br/>para um aluno"]
+    G["<b>=</b><br/>GUARDA o endereço<br/>do objeto<br/>na variável"]
+    C["<b>new Aluno()</b><br/>CRIA o objeto<br/>de verdade,<br/>na memória"]
+
+    L --> D
+    L --> G
+    L --> C
+
+    classDef linha fill:#e76f00,stroke:#e76f00,stroke-width:3px,color:#ffffff
+    classDef parte fill:#fdf1e6,stroke:#e76f00,stroke-width:3px,color:#1a1a1a
+    class L linha
+    class D,G,C parte
+    linkStyle default stroke:#e76f00,stroke-width:3.5px

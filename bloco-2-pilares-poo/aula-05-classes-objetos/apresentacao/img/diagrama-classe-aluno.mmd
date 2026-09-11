@@ -1,0 +1,21 @@
+---
+config:
+  theme: base
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 18px
+    lineColor: "#e76f00"
+    primaryColor: "#fdf1e6"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#e76f00"
+    edgeLabelBackground: "#fdfdfb"
+---
+classDiagram
+    class Aluno {
+        +String nome
+        +String matricula
+        +double[] notas
+        +calcularMedia() double
+        +estaAprovado() boolean
+        +imprimirBoletim() void
+    }
