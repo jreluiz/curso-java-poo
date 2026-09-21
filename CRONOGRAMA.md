@@ -10,21 +10,23 @@
 - [ ] **04/09** · Aula 04 — [Laços, arrays e métodos](bloco-1-fundamentos-java/aula-04-lacos-arrays-metodos/README.md) · fecha o Bloco 1
 - [ ] **11/09** · Aula 05 — [Classes e objetos](bloco-2-pilares-poo/aula-05-classes-objetos/README.md)
 - [ ] **18/09** · Aula 06 — [Encapsulamento](bloco-2-pilares-poo/aula-06-encapsulamento/README.md)
-- [ ] **25/09** · Aula 07 — [Herança](bloco-2-pilares-poo/aula-07-heranca/README.md) · revisões das Aulas 01–07 em casa
-- [ ] **02/10** · 📝 **Avaliação Oficial — 1º bimestre** · Aulas 01 a 07
+- [ ] **25/09** · 🧠 **Revisão geral para a avaliação** — [10 questões das Aulas 01 a 06](recursos/revisao-geral-aulas-01-a-06.md) · revisões das Aulas 01–06 em casa
+- ~~**02/10**~~ · 🚫 **Sem aula**
+- [ ] **09/10** · 📝 **Avaliação Oficial — 1º bimestre** · Aulas 01 a 06
 
-> 🗓️ Semana de avaliação: **28/09 a 02/10**. Notas do 1º bimestre lançadas até **09/10**.
+> 🗓️ A semana institucional de avaliação é **28/09 a 02/10**, e esta prova ficou em **09/10**, fora dela.
+>
+> ⚠️ O calendário traz **09/10** como limite para lançar as notas do 1º bimestre — mesmo dia da prova. **Confira esse prazo**, porque aplicar e lançar no mesmo dia não deixa margem para corrigir.
 
 ## 2º Bimestre — POO na prática e Java moderno
 
-- [ ] **09/10** · Aula 08 — [Polimorfismo e abstração](bloco-2-pilares-poo/aula-08-polimorfismo-abstracao/README.md) · fecha o Bloco 2
-- [ ] **16/10** · Aula 09 — [Coleções](bloco-3-poo-na-pratica/aula-09-colecoes/README.md)
-- [ ] **23/10** · Aula 10 — [Exceções](bloco-3-poo-na-pratica/aula-10-excecoes/README.md)
+- [ ] **16/10** · Aulas 07 + 08 — [Herança](bloco-2-pilares-poo/aula-07-heranca/README.md), depois [Polimorfismo e abstração](bloco-2-pilares-poo/aula-08-polimorfismo-abstracao/README.md) · **encontro duplo** · fecha o Bloco 2
+- [ ] **23/10** · Aulas 09 + 10 — [Coleções](bloco-3-poo-na-pratica/aula-09-colecoes/README.md), depois [Exceções](bloco-3-poo-na-pratica/aula-10-excecoes/README.md) · **encontro duplo**
 - [ ] **30/10** · Aulas 11 + 12 — [Organização em pacotes](bloco-3-poo-na-pratica/aula-11-organizacao-pacotes/README.md), depois [Projeto guiado: biblioteca](bloco-3-poo-na-pratica/aula-12-projeto-biblioteca/README.md) · **encontro duplo** · fecha o Bloco 3
 - [ ] **06/11** · Aula 13 — [Arquivos e persistência](bloco-4-java-moderno/aula-13-arquivos-persistencia/README.md)
-- [ ] **13/11** · Aula 14 — [Lambdas e Streams](bloco-4-java-moderno/aula-14-lambdas-streams/README.md) · revisões das Aulas 08–14 em casa
+- [ ] **13/11** · Aula 14 — [Lambdas e Streams](bloco-4-java-moderno/aula-14-lambdas-streams/README.md) · revisões das Aulas 07–14 em casa
 - ~~**20/11**~~ · 🚫 **Sem aula** — Dia Nacional de Zumbi e da Consciência Negra, feriado nacional
-- [ ] **27/11** · 📝 **Avaliação Oficial — 2º bimestre** · Aulas 08 a 14
+- [ ] **27/11** · 📝 **Avaliação Oficial — 2º bimestre** · Aulas 07 a 14
 
 > 🗓️ Semana de avaliação: **23 a 27/11**. Notas do 2º bimestre lançadas até **04/12**.
 
@@ -37,9 +39,13 @@
 >
 > 🗓️ As Aulas 15 e 16 ficam **fora das duas avaliações oficiais**. Se precisarem ser avaliadas, o lugar é o **Exame Final (14–15/12)**.
 
-## Por que um encontro duplo
+## Por que três encontros duplos
 
-São 16 aulas para 15 encontros. O par escolhido é o que menos sofre com a compressão: a **Aula 12** é um projeto guiado que aplica exatamente o que a **Aula 11** acabou de ensinar — pacotes, camadas e a separação `model`/`service`/`app`. Emendar as duas faz o aluno sair do encontro tendo desenhado a estrutura e preenchido, em vez de esperar uma semana entre o conceito e o uso.
+São 16 aulas para 13 encontros: **25/09 virou aula de revisão**, **02/10 não tem aula** e a avaliação foi para **09/10**. Sobraram cinco sextas entre a primeira prova e a segunda para oito aulas, e daí vêm os três pares:
+
+- **Aulas 07 + 08**, em 16/10 — **polimorfismo exige herança**: a Aula 08 não existe sem o que a 07 ensina, e separá-las por uma semana obriga a retomar tudo antes de começar. Juntas, fecham o Bloco 2 num encontro;
+- **Aulas 09 + 10**, em 23/10 — **é o par mais fraco dos três**, e entrou por eliminação: Coleções e Exceções são assuntos independentes, e nenhum prepara o outro. Foi escolhido porque as alternativas eram piores — dobrar 13 + 14 comprimiria o conteúdo mais novo bem na véspera da prova;
+- **Aulas 11 + 12**, em 30/10 — a **Aula 12** é um projeto guiado que aplica exatamente o que a **Aula 11** acabou de ensinar: pacotes, camadas e a separação `model`/`service`/`app`. Emendar as duas faz o aluno sair do encontro tendo desenhado a estrutura e preenchido, em vez de esperar uma semana entre o conceito e o uso.
 
 ## A conta do semestre
 
@@ -47,10 +53,12 @@ São 16 aulas para 15 encontros. O par escolhido é o que menos sofre com a comp
 |---|:---:|
 | Sextas-feiras entre 14/08 e 11/12 | **18** |
 | − Feriado da Consciência Negra (20/11) | −1 |
-| − Semanas de Avaliação Oficial (02/10 e 27/11) | −2 |
-| **Encontros disponíveis** | **15** |
+| − Avaliações Oficiais (09/10 e 27/11) | −2 |
+| − Aula de revisão para a 1ª avaliação (25/09) | −1 |
+| − Sexta sem aula (02/10) | −1 |
+| **Encontros disponíveis** | **13** |
 | Aulas do curso | 16 |
-| **Encontro duplo necessário** | **1** |
+| **Encontros duplos necessários** | **3** |
 
 ## Feriados e recessos do semestre
 
@@ -79,4 +87,4 @@ Os demais caem fora: Independência (07/09), Nossa Sr.ª Aparecida (12/10) e Fin
 
 ---
 
-*18 sextas no semestre, 1 feriado, 2 avaliações oficiais — 15 encontros para 16 aulas, com um encontro duplo em 30/10.*
+*18 sextas no semestre, 1 feriado, 1 sexta sem aula, 2 avaliações oficiais e 1 aula de revisão — 13 encontros para 16 aulas, com encontros duplos em 16/10, 23/10 e 30/10.*
