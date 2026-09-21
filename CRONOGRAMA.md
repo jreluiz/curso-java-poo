@@ -15,8 +15,6 @@
 - [ ] **09/10** · 📝 **Avaliação Oficial — 1º bimestre** · Aulas 01 a 06
 
 > 🗓️ A semana institucional de avaliação é **28/09 a 02/10**, e esta prova ficou em **09/10**, fora dela.
->
-> ⚠️ O calendário traz **09/10** como limite para lançar as notas do 1º bimestre — mesmo dia da prova. **Confira esse prazo**, porque aplicar e lançar no mesmo dia não deixa margem para corrigir.
 
 ## 2º Bimestre — POO na prática e Java moderno
 
