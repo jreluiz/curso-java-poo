@@ -8,6 +8,8 @@
 
 Leia as 8 questões aqui e decida suas respostas antes de abrir o formulário: é **uma resposta por aluno**, com conta Google, e não dá para editar depois de enviar. Ele também pede seu usuário do GitHub. Se o seu nome não estiver na lista da turma, marque a última opção e escreva o nome completo no campo seguinte.
 
+✅ **Gabarito comentado:** na [pasta de gabaritos no Google Drive](https://drive.google.com/drive/folders/1heV0UjU6YPKXpMbrFf997GTA94qvD87R), o arquivo `curso-java-poo-aula-02-gabarito.pdf` — só depois de enviar o formulário.
+
 ---
 
 ### Q-A02-01
