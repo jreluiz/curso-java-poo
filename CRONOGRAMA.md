@@ -7,18 +7,18 @@
 - [x] **14/08** · Aula 01 — [Introdução ao Java](bloco-1-fundamentos-java/aula-01-introducao-java/README.md)
 - [x] **21/08** · Aula 02 — [Variáveis e tipos](bloco-1-fundamentos-java/aula-02-variaveis-tipos/README.md)
 - [x] **28/08** · Aula 03 — [Operadores e condicionais](bloco-1-fundamentos-java/aula-03-operadores-condicionais/README.md)
-- [ ] **04/09** · Aula 04 — [Laços, arrays e métodos](bloco-1-fundamentos-java/aula-04-lacos-arrays-metodos/README.md) · fecha o Bloco 1
-- [ ] **11/09** · Aula 05 — [Classes e objetos](bloco-2-pilares-poo/aula-05-classes-objetos/README.md)
-- [ ] **18/09** · Aula 06 — [Encapsulamento](bloco-2-pilares-poo/aula-06-encapsulamento/README.md)
-- [ ] **25/09** · 🧠 **Revisão geral para a avaliação** — [10 questões das Aulas 01 a 06](recursos/revisao-geral-aulas-01-a-06.md) · revisões das Aulas 01–06 em casa
+- [x] **04/09** · Aula 04 — [Laços, arrays e métodos](bloco-1-fundamentos-java/aula-04-lacos-arrays-metodos/README.md) · fecha o Bloco 1
+- [x] **11/09** · Aula 05 — [Classes e objetos](bloco-2-pilares-poo/aula-05-classes-objetos/README.md)
+- [x] **18/09** · Aula 06 — [Encapsulamento](bloco-2-pilares-poo/aula-06-encapsulamento/README.md)
+- [x] **25/09** · 🧠 **Revisão geral para a avaliação** — [10 questões das Aulas 01 a 06](recursos/revisao-geral-aulas-01-a-06.md) · revisões das Aulas 01–06 em casa
 - ~~**02/10**~~ · 🚫 **Sem aula**
-- [ ] **09/10** · 📝 **Avaliação Oficial — 1º bimestre** · Aulas 01 a 06
+- [x] **09/10** · 📝 **Avaliação Oficial — 1º bimestre** · Aulas 01 a 06
 
 > 🗓️ A semana institucional de avaliação é **28/09 a 02/10**, e esta prova ficou em **09/10**, fora dela.
 
 ## 2º Bimestre — POO na prática e Java moderno
 
-- [ ] **16/10** · Aulas 07 + 08 — [Herança](bloco-2-pilares-poo/aula-07-heranca/README.md), depois [Polimorfismo e abstração](bloco-2-pilares-poo/aula-08-polimorfismo-abstracao/README.md) · **encontro duplo** · fecha o Bloco 2
+- [x] **16/10** · Aulas 07 + 08 — [Herança](bloco-2-pilares-poo/aula-07-heranca/README.md), depois [Polimorfismo e abstração](bloco-2-pilares-poo/aula-08-polimorfismo-abstracao/README.md) · **encontro duplo** · fecha o Bloco 2
 - [ ] **23/10** · Aulas 09 + 10 — [Coleções](bloco-3-poo-na-pratica/aula-09-colecoes/README.md), depois [Exceções](bloco-3-poo-na-pratica/aula-10-excecoes/README.md) · **encontro duplo**
 - [ ] **30/10** · Aulas 11 + 12 — [Organização em pacotes](bloco-3-poo-na-pratica/aula-11-organizacao-pacotes/README.md), depois [Projeto guiado: biblioteca](bloco-3-poo-na-pratica/aula-12-projeto-biblioteca/README.md) · **encontro duplo** · fecha o Bloco 3
 - [ ] **06/11** · Aula 13 — [Arquivos e persistência](bloco-4-java-moderno/aula-13-arquivos-persistencia/README.md)
