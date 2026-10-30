@@ -204,6 +204,10 @@ Confira no navegador que a pasta apareceu em `github.com/SEU-USUARIO/exercicios-
 
 [8 questões de múltipla escolha](revisao/README.md) para conferir se os conceitos ficaram sólidos. Responda sem consultar a aula — depois volte e corrija.
 
+**A entrega é pelo formulário:** [responder a revisão da Aula 09](https://docs.google.com/forms/d/e/1FAIpQLSeRM7lJqfMOo4ghcSUAnRhIZTUQQL9FiIw4RtAQBbDh1-0sTg/viewform)
+
+Entre com uma conta Google, selecione seu nome na lista e informe seu usuário do GitHub — só o usuário, não o endereço do perfil. Se o seu nome ainda não estiver na lista, marque a última opção e escreva o nome completo no campo seguinte. É **uma resposta por aluno** e não dá para editar depois de enviar, então confira antes. A nota é liberada no AVA depois da revisão em sala e da divulgação do gabarito.
+
 ---
 
 ⬅️ [Aula 08](../../bloco-2-pilares-poo/aula-08-polimorfismo-abstracao/README.md) | ➡️ [Aula 10 — Exceções](../aula-10-excecoes/README.md)
