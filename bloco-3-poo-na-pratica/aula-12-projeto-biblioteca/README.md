@@ -428,8 +428,6 @@ git push
 
 ---
 
-> 💻 **Código desta aula pronto para rodar:** o **projeto completo** em [`exemplos/`](exemplos/README.md) — consulte quando travar, mas construa o seu
-
 ## 🏋️ Para fechar
 
 1. **README.md do projeto** — descrição, como executar, o diagrama de classes em Mermaid e a lista de regras implementadas;
