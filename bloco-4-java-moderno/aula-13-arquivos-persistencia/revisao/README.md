@@ -86,7 +86,7 @@ O que acontece quando o separador escolhido (`;`) aparece **dentro** de um dos c
 
 ### Q-A13-07
 
-Uma linha do arquivo traz `oito` no campo do ano. O que `Integer.parseInt` faz, e qual é a conduta recomendada?
+Uma linha do arquivo traz o texto `oito` no campo do ano. O que `Integer.parseInt` faz, e qual é a conduta recomendada?
 
 - **a)** Lança `NumberFormatException`; o certo é tratar a linha, avisar e seguir com as demais, em vez de derrubar a carga inteira;
 - **b)** devolve `0` silenciosamente; nada precisa ser feito;
