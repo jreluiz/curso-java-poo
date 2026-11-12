@@ -22,7 +22,7 @@
 - ~~**23/10**~~ · 🚫 **Sem aula** — o encontro previsto (Aulas 09 + 10) passou para 30/10
 - [ ] **30/10** · Aulas 09 + 10 — [Coleções](bloco-3-poo-na-pratica/aula-09-colecoes/README.md), depois [Exceções](bloco-3-poo-na-pratica/aula-10-excecoes/README.md) · **encontro duplo**
 - [ ] **06/11** · Aulas 11 + 12 — [Organização em pacotes](bloco-3-poo-na-pratica/aula-11-organizacao-pacotes/README.md), depois [Projeto guiado: biblioteca](bloco-3-poo-na-pratica/aula-12-projeto-biblioteca/README.md) · **encontro duplo** · fecha o Bloco 3
-- [ ] **13/11** · Aula 13 — [Arquivos e persistência](bloco-4-java-moderno/aula-13-arquivos-persistencia/README.md) · revisões das Aulas 07–13 em casa
+- [ ] **13/11** · Aula 13 — [Arquivos e persistência](bloco-4-java-moderno/aula-13-arquivos-persistencia/README.md) · 🧠 [revisão geral: 14 questões das Aulas 07 a 13](recursos/revisao-geral-aulas-07-a-13.md) e revisões das Aulas 07–13 em casa
 - ~~**20/11**~~ · 🚫 **Sem aula** — Dia Nacional de Zumbi e da Consciência Negra, feriado nacional
 - [ ] **27/11** · 📝 **Avaliação Oficial — 2º bimestre** · Aulas 07 a 13
 
